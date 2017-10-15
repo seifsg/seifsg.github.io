@@ -1,0 +1,38 @@
+#servicesSection{
+    display: none;
+}
+
+#bioSection{
+    display: none;
+}
+
+#usefulSection{
+    display: none;
+}
+
+#cvSection{
+    display: none;
+}
+
+
+.section{}
+.section > :first-child{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.fullScreenJumb{
+    height: 100vh;
+    padding: 0;
+    padding-bottom: 40px;
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#arrowDown{
+    padding-right: 10px;
+    animation-delay: 1s;    
+}
