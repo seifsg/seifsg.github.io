@@ -1,38 +1,85 @@
-#servicesSection{
-    display: none;
-}
+.section {}
 
-#bioSection{
-    display: none;
-}
-
-#usefulSection{
-    display: none;
-}
-
-#cvSection{
-    display: none;
-}
-
-
-.section{}
-.section > :first-child{
+.section> :first-child {
     padding-right: 0;
     padding-left: 0;
 }
 
-.fullScreenJumb{
+.fullScreenJumb {
     height: 100vh;
     padding: 0;
     padding-bottom: 40px;
-    margin:0;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
-#arrowDown{
-    padding-right: 10px;
-    animation-delay: 1s;    
+#footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#footer p {
+    text-align: center;
+    width: fit-content;
+    margin: 5px auto;
+}
+
+#card {
+    padding: 10px;
+    width: fit-content;
+    margin: 20px auto 25px auto;
+    box-shadow: 1px 1px 1px #fafbfc;
+}
+
+#card .card-body {
+    min-width: 500px;
+}
+
+#listy {
+    margin: 15px auto;
+    width: fit-content;
+    font-size: x-large;
+}
+
+#listy ul li {
+    list-style-type: none;
+}
+
+.left {
+    padding-top: 0.4em;
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.social {}
+
+.social ul {
+}
+
+.social ul li {
+    text-align: center;
+    font-size: x-large;
+    list-style: none;
+}
+
+a {
+    color: unset;
+}
+
+.twitterLinko:hover {
+    color: #1da1f2;
+}
+
+.fbLinko:hover {
+    color: #4267b2;
+}
+
+.fccLinko:hover {
+    color: #006400;
 }
