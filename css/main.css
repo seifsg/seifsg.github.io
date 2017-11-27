@@ -38,10 +38,10 @@
 
 main{
     margin: 0;
-    padding: 0 0 0 250px;
+    padding: 0;
+    position: absolute;
     background-color: #fcfcfc;
     height: 100%;
-    position: absolute;
     top: 0;
     width: 100%;
 }
@@ -61,27 +61,65 @@ main{
     right: 0;
     bottom: 0;
     height: fit-content;
+    height: -moz-fit-content;
     margin: auto;
     padding-left: 250px;
     width: fit-content;
+    width: -moz-fit-content;
     text-align: right;
     transition: all 1s ease-in 2s;
 }
 #datText h1:first-child{
     margin-bottom: -20px;
 }
+#datText h1{
+    font-size: 3em;
+}
 #loveText{
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
     width: fit-content;
     height: fit-content;
+    width: -moz-fit-content;
+    height: -moz-fit-content;
     margin: -10px auto;
     position: absolute;
     top: 0;
-    left: 0;
-    padding-left: 280px;
     color: white;
     transition: all 1s ease-in 2s;
 }
+#loveText h3{
+    font-size: 2em;
+}
+#bigHeart{
+    animation: pulse 2s ease infinite;
+}
+@keyframes pulse {
+    0% { text-shadow: 1px 1px 1px #fff; }
+    50% {text-shadow: 1px 1px 15px  #fff; }
+    100% { text-shadow: 1px 1px 1px  #fff; }
+  }
 .underlined{
     border-bottom: 5px solid #009688;
+}
+
+nav{
+    height: 0;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+@media (min-width: 992px) {
+    main{
+        padding: 0 0 0 250px;
+    }
+    #loveText{
+        padding-left: 280px;
+        left: 0;
+    }
+}
+
+@media (max-width: 600px){
+    #loveText{
+        padding-left: 20px;
+    }
 }
