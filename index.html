@@ -3,148 +3,168 @@
 
 <head>
 
-    <title>SeifSG - Seif Sgayer - Hire a Freelancer &amp; Learn from a Computer Scientist/Developer/Coder</title>
+    <title>SeifSG - Seif Sgayer - Hire a Freelancer || Learn from a Computer Scientist/Developer/Coder</title>
 
     <meta name="description" content="SEIFSG, Seif Sgayer ,Seif Sghaier, it all lands here. Need to hire a programmer? or Read about something interesting? Computer Science, gaming etc..."
     />
     <meta name="keywords" content="hire, developer, computer, science, seifsg, seif, sgayer, sghaier" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fastcdn.org/Animate.css/3.4.0/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
 </head>
 
 <body>
 
-    <nav class="navbar fixed-bottom  navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
-            aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-        <a class="navbar-brand" href="#">SeifSG</a>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" data-sec="actualitiesSection" href="/Actualities">Actualities</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-sec="servicesSection" href="/Services">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-sec="bioSection" href="/Bio">Bio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-sec="cvSection" href="/Links">CV</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-sec="usefulSection" href="/Links">Useful links</a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="https://seifsg.blogspot.com/">Blog</a>
-                </li> -->
-            </ul>
-            <span class="navbar-text" id="phrases"></span>
-        </div>
+    <!-- Navigation Menu-->
+    <nav ng-class="hide-on-small-only">
+        <ul class="side-nav fixed section table-of-contents">
+            <li class="logo">
+                <a href="index.html" class="logoA cyan-text" style="font-size:38px;font-weight: 300;">Seif Sgayer
+
+                    <span class="brown-text light" style="line-height: 48px;">@ SeifSG</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a href="#about" class="waves-effect waves-dark teal-text">
+                    <i class="fa fa-user-circle-o teal-text" aria-hidden="true"></i>
+                    <span>About</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a href="#ca" class="waves-effect waves-dark red-text">
+                    <i class="fa fa-video-camera red-text" aria-hidden="true"></i>
+                    <span>Current Activity</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a href="#al" class="waves-effect waves-dark cyan-text">
+                    <i class="fa fa-newspaper-o cyan-text" aria-hidden="true"></i>
+                    <span>Activity Logs</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a href="#services" class="waves-effect waves-dark indigo-text">
+                    <i class="fa fa-suitcase indigo-text" aria-hidden="true"></i>
+                    <span>Services</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a href="#portfolio" class="waves-effect waves-dark purple-text">
+                    <i class="fa fa-briefcase purple-text" aria-hidden="true"></i>
+                    <span>Portfolio</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a href="#resume" class="waves-effect waves-dark orange-text">
+                    <i class="fa fa-id-card-o orange-text" aria-hidden="true"></i>
+                    <span>Resume</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a href="#blog" class="waves-effect waves-dark brown-text">
+                    <i class="fa fa-rss brown-text" aria-hidden="true"></i>
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a href="#ur" target="_blank" class="waves-effect waves-dark grey-text text-darken-3">
+                    <i class="fa fa-external-link grey-text text-darken-3" aria-hidden="true"></i>
+                    <span>Useful Resources</span>
+                </a>
+            </li>
+        </ul>
     </nav>
 
-    <!-- Actualities Section -->
+    <nav class="hide-on-large only trigger z-depth-1">
+        <a href="#" data-activates="slide-out" class="button-collapse">
+            <i class="fa fa-navicon cyan-text" aria-hidden="true"></i>
+        </a>
+        <div class="name-title">
+            <a id="name" href="#main" class="cyan-text">Seif Sgayer</a>
+            <span class="brown-text light">Full Stack Developer</span>
+        </div>
+    </nav>
+    <nav class="hide-on-large only">
+        <ul id="slide-out" class="side-nav">
+            <li class="bold">
+                <a href="#about" class="waves-effect waves-dark teal-text">
+                    <i class="fa fa-user-circle-o teal-text" aria-hidden="true"></i>
+                    <span>About</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a href="#ca" class="waves-effect waves-dark red-text">
+                    <i class="fa fa-video-camera red-text" aria-hidden="true"></i>
+                    <span>Now</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a href="#al" class="waves-effect waves-dark cyan-text">
+                    <i class="fa fa-newspaper-o cyan-text" aria-hidden="true"></i>
+                    <span>Activity Logs</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a href="#services" class="waves-effect waves-dark indigo-text">
+                    <i class="fa fa-suitcase indigo-text" aria-hidden="true"></i>
+                    <span>Services</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a href="#portfolio" class="waves-effect waves-dark purple-text">
+                    <i class="fa fa-briefcase purple-text" aria-hidden="true"></i>
+                    <span>Portfolio</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a href="#resume" class="waves-effect waves-dark orange-text">
+                    <i class="fa fa-id-card-o orange-text" aria-hidden="true"></i>
+                    <span>Resume</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a href="#blog" class="waves-effect waves-dark brown-text">
+                    <i class="fa fa-rss brown-text" aria-hidden="true"></i>
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a href="#ur" target="_blank" class="waves-effect waves-dark grey-text text-darken-3">
+                    <i class="fa fa-external-link grey-text text-darken-3" aria-hidden="true"></i>
+                    <span>Useful Resources</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
-    <div id="actualitiesSection" class="section">
+    <!-- main content -->
 
-        <div class="container-fluid">
-            <div class="jumbotron fullScreenJumb">
-                <div>
-                    <h2 class="display-3">Computer Scientist</h2>
-                    <h2 class="display-3">Software Developer</h2>
-                    <h1 class="display-3">Freelancer</h1>
-                    <h1 class="display-4"><i class="fa fa-arrow-down " aria-hidden="true" id="arrowDown" data-toggle="tooltip"
-                            data-placement="right" title="Scroll down coming soon!"></i></h1>
-                </div>
+    <main>
+        <div id="main_bg"></div>
+        <div class="container">
+            <div id="datText">
+                <h1>Full Stack Developer</h1>
+                <h1>Freelancer</h1>
+                <button>Yes! I am available.</button>
+            </div>
+            <div id="loveText">
+                <h3>
+                    Doing it for the
+                    <i class="fa fa-heart" id="bigHeart" aria-hidden="true"></i> of it.
+                </h3>
             </div>
         </div>
-
-        <div class="container-fluid">
-
-            <div class="fullScreenJumb">
-                <div style="text-align:center;">
-                        <h2 class="display-4">Currently working on</h2>
-                        <p>Something very interesting. Come again soon!</p>
-                </div>                
-            </div>
-            
-
-        </div>
-
-    </div>
-
-
-    <div id="servicesSection" class="section">
-
-        <div class="container-fluid">
-            <div class="jumbotron">
-                <h1 class="display-3">Freelancer</h1>
-                <p class="lead">Yes! Keep it simple and real.</p>
-                <hr class="my-4">
-                <p>In this section, I will be presenting the actualties of a veriaty of my activities such as social, coding
-                    and my readings along with progress if possible.</p>
-            </div>
-        </div>
-
-    </div>
-
-
-    <div id="bioSection" class="section">
-
-        <div class="container-fluid">
-            <div class="jumbotron">
-                <h1 class="display-3">Story time!</h1>
-                <p class="lead">Yes! Keep it simple and real.</p>
-                <hr class="my-4">
-                <p>In this section, I will be presenting the actualties of a veriaty of my activities such as social, coding
-                    and my readings along with progress if possible.</p>
-            </div>
-        </div>
-
-    </div>
-
-    <div id="cvSection" class="section">
-
-        <div class="container-fluid">
-            <div class="jumbotron">
-                <h1 class="display-3">Contact me</h1>
-                <p class="lead">Yes! Keep it simple and real.</p>
-                <hr class="my-4">
-                <p>In this section, I will be presenting the actualties of a veriaty of my activities such as social, coding
-                    and my readings along with progress if possible.</p>
-            </div>
-        </div>
-
-    </div>
-
-    <div id="usefulSection" class="section">
-
-        <div class="container-fluid">
-            <div class="jumbotron">
-                <h1 class="display-3">References for good</h1>
-                <p class="lead">Yes! Keep it simple and real.</p>
-                <hr class="my-4">
-                <p>In this section, I will be presenting the actualties of a veriaty of my activities such as social, coding
-                    and my readings along with progress if possible.</p>
-            </div>
-        </div>
-
-    </div>
-
+    </main>
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-        crossorigin="anonymous"></script>
-    <script src="scripts/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
 </body>
 
