@@ -1,18 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
-    <title>SeifSG - Seif Sgayer - Hire a Freelancer || Learn from a Computer Scientist/Developer/Coder</title>
+    <title>Seif Sgayer (SeifSG) - Freelancer - Full Stack Developer</title>
 
-    <meta name="description" content="SEIFSG, Seif Sgayer ,Seif Sghaier, it all lands here. Need to hire a programmer? or Read about something interesting? Computer Science, gaming etc..."
+    <meta name="description" content="SeifSG (Seif Sgayer) is a full stack developer and a freelancer. Need to hire a programmer? or Read about something interesting? Computer Science, gaming etc..."
     />
-    <meta name="keywords" content="hire, developer, computer, science, seifsg, seif, sgayer, sghaier" />
+    <meta name="keywords" content="hire, developer,freelancer, fullstack, javascript, computer, science, seifsg, seif, sgayer, sghaier"
+    />
+
+    <!-- open graph stuff -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seifsg.com/index.html">
+    <meta property="og:title" content="Seif Sgayer - Full Stack Developer">
+    <meta property="og:image" content="https://seifsg.com/imgs/og.png">
+    <meta property="og:description" content="SeifSG is a full stack developer and a freelancer">
+    <meta property="og:site_name" content="Seif Sgayer - Full Stack Developer">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="400">
+
+    <!-- twitter card -->
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@seifsgayer">
+    <meta name="twitter:creator" content="@seifsgayer">
+    <meta name="twitter:url" content="https://seifsg.com/index.html">
+    <meta name="twitter:title" content="Seif Sgayer - Full Stack Developer">
+    <meta name="twitter:description" content="SeifSG is a full stack developer and a freelancer">
+    <meta name="twitter:image" content="https://seifsg.com/imgs/og.png">
+
+
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="css/main.css">
-
+    <link type="text/plain" rel="author" href="http://seifsg.com/humans.txt" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
@@ -22,22 +46,21 @@
 <body>
 
     <!-- Navigation Menu-->
-    <nav ng-class="hide-on-small-only">
+    <nav class="hide-on-small-only" role="navigation">
         <ul class="side-nav fixed section table-of-contents">
             <li class="logo">
                 <a href="index.html" class="logoA cyan-text" style="font-size:38px;font-weight: 300;">Seif Sgayer
-
-                    <span class="brown-text light" style="line-height: 48px;">@ SeifSG</span>
+                    <span class="brown-text light" style="line-height: 48px;">SeifSG</span>
                 </a>
             </li>
             <li class="bold">
-                <a href="#about" class="waves-effect waves-dark teal-text">
+                <a href="about.html" class="waves-effect waves-dark teal-text">
                     <i class="fa fa-user-circle-o teal-text" aria-hidden="true"></i>
                     <span>About</span>
                 </a>
             </li>
             <li class="bold">
-                <a href="#ca" class="waves-effect waves-dark red-text">
+                <a href="now.html" class="waves-effect waves-dark red-text">
                     <i class="fa fa-video-camera red-text" aria-hidden="true"></i>
                     <span>Current Activity</span>
                 </a>
@@ -78,6 +101,11 @@
                     <span>Useful Resources</span>
                 </a>
             </li>
+            <li>
+                <p class="fText grey-text">Made with ♥ -
+                    <span onclick="window.location='humans.txt';">Humans.txt</span>
+                </p>
+            </li>
         </ul>
     </nav>
 
@@ -86,20 +114,20 @@
             <i class="fa fa-navicon cyan-text" aria-hidden="true"></i>
         </a>
         <div class="name-title">
-            <a id="name" href="#main" class="cyan-text">Seif Sgayer</a>
+            <a id="name" href="index.html" class="cyan-text">Seif Sgayer</a>
             <span class="brown-text light">Full Stack Developer</span>
         </div>
     </nav>
-    <nav class="hide-on-large only">
+    <nav class="hide-on-large only" role="navigation">
         <ul id="slide-out" class="side-nav">
             <li class="bold">
-                <a href="#about" class="waves-effect waves-dark teal-text">
+                <a href="about.html" class="waves-effect waves-dark teal-text">
                     <i class="fa fa-user-circle-o teal-text" aria-hidden="true"></i>
                     <span>About</span>
                 </a>
             </li>
             <li class="bold">
-                <a href="#ca" class="waves-effect waves-dark red-text">
+                <a href="now.html" class="waves-effect waves-dark red-text">
                     <i class="fa fa-video-camera red-text" aria-hidden="true"></i>
                     <span>Now</span>
                 </a>
@@ -140,13 +168,17 @@
                     <span>Useful Resources</span>
                 </a>
             </li>
+            <li>
+                <p class="fText grey-text">Made with ♥ -
+                    <span onclick="window.location='humans.txt';">Humans.txt</span>
+                </p>
+            </li>
         </ul>
     </nav>
 
     <!-- main content -->
-
-    <main>
-        <div id="main_bg"></div>
+    <div id="main_bg" role="banner"></div>
+    <main role="main">
         <div class="container">
             <div id="datText">
                 <h1>Full Stack Developer</h1>
@@ -164,7 +196,7 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 

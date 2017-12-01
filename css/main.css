@@ -44,10 +44,10 @@ main {
     margin: 0;
     padding: 0;
     position: absolute;
-    background-color: #fcfcfc;
     height: 100%;
     top: 0;
     width: 100%;
+    overflow: hidden;
 }
 
 #main_bg {
@@ -57,6 +57,8 @@ main {
     background-size: cover;
     width: 100%;
     height: 100%;
+    position: absolute;
+    z-index: -1;
 }
 
 #datText {
@@ -139,6 +141,11 @@ main {
     border-bottom: 5px solid #009688;
 }
 
+.container-fliud>h3{
+    margin-top: 0;
+    text-align: center;
+}
+
 @media (max-width: 992px) {
     #loveText {
         padding-top: 60px;
@@ -151,9 +158,17 @@ main {
     .name-text a {
         font-size: 22px;
     }
+    nav.hide-on-large.only.trigger {
+        height: 56px;
+    }
 }
 
 @media (min-width: 992px) {
+    #main_bg{
+        width: calc(100% - 250px);
+        position: absolute;
+        right: 0;
+    }
     main {
         padding: 0 0 0 250px;
     }
@@ -173,14 +188,37 @@ main {
         padding-top: 69px;
         height: 360px;
     }
+    .container-fliud>h3{
+        padding: 20px;
+        text-align: left;
+    }
+
 }
 
 @media (max-width: 600px) {}
-
+@media (max-height: 400px) {
+    #datText{
+        padding-top: 48px;
+    }
+}
+nav{
+    height: 0;
+}
 nav.hide-on-large.only.trigger {
     display: block;
     position: fixed;
     top: 0;
     z-index: 2;
     background-color: white;
+}
+
+.fText{
+    text-align: center;
+}
+
+.table-of-contents a.active, .side-nav li > a.active{
+    font-weight: 600;
+    background-color: rgba(0,0,0,0.05);
+    border: 1px solid;
+    border-left-width: 3px;
 }

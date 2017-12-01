@@ -1,0 +1,11 @@
+Hi!
+I started freelancing in 2010 and did many projects to clients from around the globe. Mostly done on their production sites.
+I didn't log any of it so it resulted in me losing all my work records.
+I made this site so that I can prove my work to myself and to my clients.
+In the creation of this website I used:
+*Materializecss
+*jQuery
+*fontawesome
+*picture from google that are labeled free for commercial use
+This site shall be updated daily.
+Last update: 01/12/2017 (dd/mm/yyyy)
