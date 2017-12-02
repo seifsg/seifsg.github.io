@@ -6,6 +6,4 @@ $(document).ready(function () {
         closeOnClick: true
     });
 
-    $("#bigHeart").addClass('red-text').css('text-shadow', '1px 1px 5px #fff');
-
 });
