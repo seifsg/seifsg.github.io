@@ -231,3 +231,6 @@ nav.hide-on-large.only.trigger {
     border: 1px solid;
     border-left-width: 3px;
 }
+.calendar{
+    width: 100%;
+}

@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110490620-1"></script>
     <script>
@@ -16,20 +15,18 @@
         gtag('config', 'UA-110490620-1');
     </script>
 
+    <title>Seif Sgayer (SeifSG) - Journal</title>
 
-    <title>Seif Sgayer (SeifSG) - Freelancer - Full Stack Developer</title>
-
-    <meta name="description" content="SeifSG (Seif Sgayer) is a full stack developer and a freelancer. Need to hire a programmer? or Read about something interesting? Computer Science, gaming etc..."
-    />
+    <meta name="description" content="SeifSG journal, daily logs, recent activities." />
     <meta name="keywords" content="hire, developer,freelancer, fullstack, javascript, computer, science, seifsg, seif, sgayer, sghaier"
     />
 
     <!-- open graph stuff -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://seifsg.com/about.html">
-    <meta property="og:title" content="Seif Sgayer - Full Stack Developer">
-    <meta property="og:image:secure_url" content="https://seifsg.com/imgs/og.png" /> 
-    <meta property="og:image:type" content="image/png" /> 
+    <meta property="og:url" content="https://seifsg.com/journal.html">
+    <meta property="og:title" content="Seif Sgayer - Full Stack Developer - Journal">
+    <meta property="og:image:secure_url" content="https://seifsg.com/imgs/og.png" />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:description" content="SeifSG is a full stack developer and a freelancer">
     <meta property="og:site_name" content="Seif Sgayer - Full Stack Developer">
     <meta property="og:locale" content="en_US">
@@ -41,7 +38,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@seifsgayer">
     <meta name="twitter:creator" content="@seifsgayer">
-    <meta name="twitter:url" content="https://seifsg.com/about.html">
+    <meta name="twitter:url" content="https://seifsg.com/now.html">
     <meta name="twitter:title" content="Seif Sgayer - Full Stack Developer">
     <meta name="twitter:description" content="SeifSG is a full stack developer and a freelancer">
     <meta name="twitter:image" content="https://seifsg.com/imgs/og.png">
@@ -50,12 +47,13 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="stylesheet" href="css/main.css">
     <link type="text/plain" rel="author" href="http://seifsg.com/humans.txt" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
     <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -81,7 +79,7 @@
                 </a>
             </li>
             <li class="bold">
-                <a href="journal.html" class="waves-effect waves-dark cyan-text">
+                <a href="journal.html" class="waves-effect waves-dark cyan-text active">
                     <i class="fa fa-newspaper-o cyan-text" aria-hidden="true"></i>
                     <span>Activity Logs</span>
                 </a>
@@ -148,7 +146,7 @@
                 </a>
             </li>
             <li class="bold">
-                <a href="journal.html" class="waves-effect waves-dark cyan-text">
+                <a href="journal.html" class="waves-effect waves-dark cyan-text active">
                     <i class="fa fa-newspaper-o cyan-text" aria-hidden="true"></i>
                     <span>Activity Logs</span>
                 </a>
@@ -191,26 +189,33 @@
         </ul>
     </nav>
 
+
+
     <!-- main content -->
-    <div id="main_bg" role="banner"></div>
     <main role="main">
-        <div class="container">
-            <div id="datText">
-                <h1>Full Stack Developer</h1>
-                <h1>Freelancer</h1>
-                <button>Yes! I am available.</button>
-            </div>
-            <div id="loveText">
-                <h3>
-                    Doing it for the
-                    <i class="fa fa-heart red-text" id="bigHeart" aria-hidden="true"></i> of it.
-                </h3>
-            </div>
+        <div class="container-fliud">
+            <section>
+                <h3 class="page-title white-text cyan">Activity Logs</h3>
+                <div class="container flow-text">
+                    <p>
+                        <blockquote>
+                            <small>I like to learn and help others learn. An adventure is always better with friends.</small>
+                        </blockquote>
+                    </p>
+                    <h4>Github Calendar</h4>
+                    <div class="calendar">
+                        <!-- Loading stuff -->
+                        Loading the data just for you.
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+    <script src="js/journal.js"></script>
     <script src="js/main.js"></script>
 
 </body>
