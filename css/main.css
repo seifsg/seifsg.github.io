@@ -84,7 +84,7 @@ main {
     left: 0;
 }
 
-#datText button {
+#datText a {
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, 0.4));
     padding: 16px 32px;
     border: 2px dashed white;
@@ -93,9 +93,11 @@ main {
     transition: color .1s ease-in-out 0s;
     transition: border .1s ease-in-out 0s;
     font-weight: 600;
+    color: white;
+    display: inline-block;
 }
 
-#datText button:hover {
+#datText a:hover {
     background: white;
     color: black;
     border: 2px solid rgba(0, 0, 0, .2);
@@ -198,6 +200,9 @@ main {
         padding: 30px 40px;
         text-align: left;
     }
+    .name-title {
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {}
@@ -231,27 +236,52 @@ nav.hide-on-large.only.trigger {
     border: 1px solid;
     border-left-width: 3px;
 }
-.calendar{
+
+.calendar {
     width: 100%;
 }
-#humans{
+
+#humans {
     cursor: pointer;
 }
-#jtabs h1{
+
+#jtabs h1 {
     font-size: 3.2rem;
 }
-#jtabs h2{
+
+#jtabs h2 {
     font-size: 2.8rem;
 }
-#jtabs h3{
+
+#jtabs h3 {
     font-size: 2.2rem;
 }
-#jtabs h4{
+
+#jtabs h4 {
     font-size: 1.8rem;
 }
-#jtabs strong{
+
+#jtabs strong {
     font-weight: 600;
 }
-#doc_logs p{
+
+#doc_logs p,
+#profiles p,
+#profiles ul li {
     color: black;
+}
+
+#profiles ul li a {
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+#profiles ul li a:hover {
+    color: #009688;
+    text-decoration: underline;
+}
+
+#contact span {
+    white-space: nowrap;
+    margin-top: 5px;
 }

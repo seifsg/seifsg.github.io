@@ -7,3 +7,11 @@ $(document).ready(function () {
     });
 
 });
+
+$("#contact ul li a").on('mouseenter', function () {
+    $(this).addClass("pulse").addClass("purple").removeClass("cyan");
+});
+
+$("#contact ul li a").on('mouseleave', function () {
+    $(this).removeClass("pulse").removeClass("purple").addClass("cyan");
+});
