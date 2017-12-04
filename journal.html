@@ -53,6 +53,7 @@
     <meta charset="UTF-8">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/hot-sneaks/jquery-ui.css" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -116,7 +117,7 @@
             </li>
             <li>
                 <p class="fText grey-text">Made with ♥ -
-                    <span onclick="window.location='humans.txt';">Humans.txt</span>
+                    <span id="humans" onclick="window.location='humans.txt';">Humans.txt</span>
                 </p>
             </li>
         </ul>
@@ -183,7 +184,7 @@
             </li>
             <li>
                 <p class="fText grey-text">Made with ♥ -
-                    <span onclick="window.location='humans.txt';">Humans.txt</span>
+                    <span id="humans" onclick="window.location='humans.txt';">Humans.txt</span>
                 </p>
             </li>
         </ul>
@@ -193,20 +194,54 @@
 
     <!-- main content -->
     <main role="main">
-        <div class="container-fliud">
+        <div class="container-fluid">
             <section>
                 <h3 class="page-title white-text cyan">Activities Log</h3>
                 <div class="container flow-text">
                     <p>
                         <blockquote>
-                            <small>I like to learn and help others learn. An adventure is always better with friends.</small>
+                            <small>An adventure is always better with friends. So I thought I'd share.</small>
                         </blockquote>
                     </p>
-                    <h4>Github Calendar</h4>
-                    <div class="calendar">
-                        <!-- Loading stuff -->
-                        Loading the data just for you.
+                </div>
+                <div class="container-fluid">
+                    <div id="jtabs">
+                        <ul>
+                            <li>
+                                <a href="#tabs-1">Github Calendar</a>
+                            </li>
+                            <li>
+                                <a href="#doc_logs">100DoC</a>
+                            </li>
+                            <li>
+                                <a href="#tabs-3">Other</a>
+                            </li>
+                        </ul>
+                        <div id="tabs-1">
+                            <div class="calendar">
+                                <!-- Loading stuff -->
+                                Loading the data just for you.
+                            </div>
+
+                        </div>
+                        <div id="doc_logs">
+                            <p>
+                                <blockquote>
+                                    <small>Fetched from Github repo:
+                                        <a href="https://github.com/seifsg/100-days-of-code/blob/master/log.md" target="_blank">here</a>
+                                    </small>
+                                </blockquote>
+                            </p>
+                            <div id="doc_log1">
+
+                            </div>
+                        </div>
+                        <div id="tabs-3">
+                            <p>Soon.</p>
+                        </div>
                     </div>
+
+
                 </div>
             </section>
         </div>
@@ -215,6 +250,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+    <script src="https://cdn.rawgit.com/showdownjs/showdown/1.8.3/dist/showdown.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="js/journal.js"></script>
     <script src="js/main.js"></script>
 

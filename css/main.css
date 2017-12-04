@@ -146,7 +146,7 @@ main {
     border-bottom: 5px solid #009688;
 }
 
-.container-fliud>section>h3 {
+.container-fluid>section>h3 {
     margin-top: 0;
     text-align: center;
     padding: 10px 0;
@@ -194,7 +194,7 @@ main {
         padding-top: 69px;
         height: 360px;
     }
-    .container-fliud>section>h3 {
+    .container-fluid>section>h3 {
         padding: 30px 40px;
         text-align: left;
     }
@@ -233,4 +233,25 @@ nav.hide-on-large.only.trigger {
 }
 .calendar{
     width: 100%;
+}
+#humans{
+    cursor: pointer;
+}
+#jtabs h1{
+    font-size: 3.2rem;
+}
+#jtabs h2{
+    font-size: 2.8rem;
+}
+#jtabs h3{
+    font-size: 2.2rem;
+}
+#jtabs h4{
+    font-size: 1.8rem;
+}
+#jtabs strong{
+    font-weight: 600;
+}
+#doc_logs p{
+    color: black;
 }
