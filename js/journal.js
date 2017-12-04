@@ -15,3 +15,7 @@ log1.load("https://urlreq.appspot.com/req?method=GET&url=https://raw.githubuserc
 GitHubCalendar(".calendar", "seifsg");
 
 $("#jtabs").tabs();
+
+$(document).ready(function(){
+    $("#jtabs").show();
+});
