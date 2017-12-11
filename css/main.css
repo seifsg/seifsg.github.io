@@ -2,15 +2,11 @@
     height: 150px;
 }
 
-.logo>a {}
-
 .logo>a>span {
     line-height: 30px;
     font-size: 20px;
     display: block;
 }
-
-.logoA {}
 
 .side-nav {
     width: 250px;
@@ -47,12 +43,8 @@ section {
 main {
     margin: 0;
     padding: 0;
-    position: absolute;
     height: 100%;
-    top: 0;
     width: 100%;
-    overflow: hidden;
-    overflow-y: scroll;
 }
 
 #main_bg {
@@ -72,14 +64,12 @@ main {
     position: absolute;
     right: 0;
     bottom: 0;
-    /*! height: fit-content; */
     height: 220px;
     margin: auto;
     padding-left: 0;
     width: fit-content;
     width: -moz-fit-content;
     text-align: center;
-    /*transition: all 1s ease-in;*/
     top: 0;
     left: 0;
 }
@@ -121,7 +111,6 @@ main {
     position: absolute;
     top: 0;
     color: white;
-    /*transition: all .5s ease-in;*/
 }
 
 #loveText h3 {
@@ -129,18 +118,18 @@ main {
 }
 
 #bigHeart {
-    animation: pulse 2s ease infinite;
+    animation: pulse 4s ease-in-out infinite;
 }
 
 @keyframes pulse {
     0% {
-        text-shadow: 0px 0px 1px #fff;
+        text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.3);
     }
     50% {
-        text-shadow: 0px 0px 15px #fff;
+        text-shadow: 0px 0px 15px rgba(255, 0, 0, 1), 0px 0px 3px rgba(0, 0, 0, 1);
     }
     100% {
-        text-shadow: 0px 0px 1px #fff;
+        text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.3);
     }
 }
 
@@ -154,64 +143,6 @@ main {
     padding: 10px 0;
 }
 
-@media (max-width: 992px) {
-    #loveText {
-        padding-top: 60px;
-        right: 0;
-        left: 0;
-    }
-    main {
-        padding-top: 56px;
-    }
-    .name-text a {
-        font-size: 22px;
-    }
-    nav.hide-on-large.only.trigger {
-        height: 56px;
-    }
-}
-
-@media (min-width: 992px) {
-    #main_bg {
-        width: calc(100% - 250px);
-        position: absolute;
-        right: 0;
-    }
-    main {
-        padding: 0 0 0 250px;
-    }
-    #loveText {
-        padding-left: 280px;
-        left: 0;
-    }
-    nav {
-        height: 0;
-        box-shadow: none;
-        background-color: transparent;
-    }
-    #datText {
-        font-size: 3.5vh;
-        padding-left: 250px;
-        margin-top: 69px;
-        padding-top: 69px;
-        height: 360px;
-    }
-    .container-fluid>section>h3 {
-        padding: 30px 40px;
-        text-align: left;
-    }
-    .name-title {
-        display: none;
-    }
-}
-
-@media (max-width: 600px) {}
-
-@media (max-height: 400px) {
-    #datText {
-        padding-top: 48px;
-    }
-}
 
 nav {
     height: 0;
@@ -284,4 +215,64 @@ nav.hide-on-large.only.trigger {
 #contact span {
     white-space: nowrap;
     margin-top: 5px;
+}
+
+@media (max-width: 992px) {
+    #loveText {
+        padding-top: 60px;
+        right: 0;
+        left: 0;
+    }
+    main {
+        padding-top: 56px;
+    }
+    .name-text a {
+        font-size: 22px;
+    }
+    nav.hide-on-large.only.trigger {
+        height: 56px;
+    }
+}
+
+@media (min-width: 993px) {
+    #main_bg {
+        width: calc(100% - 250px);
+        position: absolute;
+        right: 0;
+    }
+    main {
+        padding: 0 0 0 250px;
+    }
+    #loveText {
+        padding-left: 280px;
+        left: 0;
+    }
+    nav {
+        height: 0;
+        box-shadow: none;
+        background-color: transparent;
+    }
+    #datText {
+        font-size: 3.5vh;
+        padding-left: 250px;
+        margin-top: 69px;
+        padding-top: 69px;
+        height: 360px;
+    }
+    .container{
+        width: 90%;
+    }
+    .container-fluid>section>h3 {
+        padding: 30px 40px;
+        text-align: left;
+    }
+    .name-title {
+        display: none;
+    }
+}
+
+@media (max-height: 400px) {
+    #datText {
+        padding-top: 48px;
+    }
 }
