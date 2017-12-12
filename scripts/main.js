@@ -20,7 +20,7 @@ sections[sectionsNames[0]].visible = true;
 sections[sectionsNames[0]].title = 'Hire a Freelancer &amp; Learn from a Computer Scientist/Developer/Coder';
 sections[sectionsNames[1]].title = 'Freelancer | FullStack Web Development | Software Engineering';
 sections[sectionsNames[2]].title = 'Biography';
-sections[sectionsNames[3]].title = 'Useful links and resources';
+sections[sectionsNames[3]].title = 'Useful links and Ressources';
 sections[sectionsNames[4]].title = 'Curriculum Vitae (CV)';
 
 
