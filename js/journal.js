@@ -8,7 +8,7 @@ var converter = new showdown.Converter();
 //Store object
 var log1 = $("#doc_log1");
 //Load data from github
-log1.load("https://urlreq.appspot.com/req?method=GET&url=https://raw.githubusercontent.com/seifsg/100-days-of-code/master/log.md", function () {
+log1.load("https://raw.githubusercontent.com/seifsg/100-days-of-code/master/log.md", function () {
     parseHtml(converter, log1)
 });
 
