@@ -8,4 +8,4 @@ In the creation of this website I used:
 *fontawesome
 *picture from google that are labeled free for commercial use
 This site shall be updated daily.
-Last update: 13/12/2017 (dd/mm/yyyy)
+Last update: 14/12/2017 (dd/mm/yyyy)
