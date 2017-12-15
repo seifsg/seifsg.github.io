@@ -1,5 +1,5 @@
 // We just want to make sure that we have all strings initialized
-export abstract class NavbarText {
+export abstract class HomeText {
     abstract home: string;
     abstract activities: string;
     abstract currentActivity: string;

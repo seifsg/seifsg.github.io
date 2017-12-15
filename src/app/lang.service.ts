@@ -3,6 +3,10 @@ import { Injectable } from '@angular/core';
 import { NavbarText } from './navbar/navbar.text';
 import { NavbarEn } from './navbar/navbar.s.en';
 
+// Home imports
+import { HomeText } from './home/home.text';
+import { HomeEn } from './home/home.s.en';
+
 // The service responsible for showing any text on the website
 // by language
 // languages will be added at a later stage
@@ -21,6 +25,10 @@ export class LangService {
 
   getNavbarText(): NavbarText {
     return NavbarEn.init();
+  }
+
+  getHomeText(): HomeText {
+    return HomeEn.init();
   }
 
 }

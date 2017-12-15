@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {HomeText} from './home.text';
+import { LangService } from '../lang.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  t: HomeText;
+  constructor(private lang: LangService) { }
 
   ngOnInit() {
+    this.t = this.lang.getHomeText();
   }
 
 }
