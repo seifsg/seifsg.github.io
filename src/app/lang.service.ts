@@ -1,8 +1,11 @@
 import { Injectable } from '@angular/core';
-
+// Navbar imports
+import { NavbarText } from './navbar/navbar.text';
+import { NavbarEn } from './navbar/navbar.s.en';
 
 // The service responsible for showing any text on the website
 // by language
+// languages will be added at a later stage
 @Injectable()
 export class LangService {
   lang: string;
@@ -15,4 +18,9 @@ export class LangService {
   getLang(): string {
     return this.lang;
   }
+
+  getNavbarText(): NavbarText {
+    return NavbarEn.init();
+  }
+
 }
