@@ -8,6 +8,8 @@ import { AppRoutingModule } from './/app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 
+import {LangService} from './lang.service';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,7 @@ import { HomeComponent } from './home/home.component';
     BrowserAnimationsModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [LangService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
