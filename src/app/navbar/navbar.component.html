@@ -1,7 +1,23 @@
-<div id="topNavbar">
-  <a class="seifSgBrand" routerLink="/">{{seifSgBrand}}</a>
+<!--<div id="topNavbar">
+  <a class="seifSgBrand" routerLink="/"></a>
   <a class="navLinks" routerLink="/">{{t.home}}</a>
   <a class="navLinks" routerLink="/portfolio">{{t.portfolio}}</a>
   <a class="navLinks" routerLink="/about">{{t.about}}</a>
   <a class="navMenuLink"><i class="material-icons">menu</i></a>
-</div>
+</div>-->
+
+
+<mat-toolbar color="primary" class="topbar">
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="sn.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>{{seifSgBrand}} -
+      <small>Freelancer</small>
+    </span>
+    <span class="spacer"></span>
+    <button mat-button class="navLinks" routerLink="/">{{t.home}}</button>
+    <button mat-button class="navLinks" routerLink="/portfolio">{{t.portfolio}}</button>
+    <button mat-button class="navLinks" routerLink="/about">{{t.about}}</button>
+  </mat-toolbar-row>
+</mat-toolbar>

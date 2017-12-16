@@ -1,15 +1,14 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {NavbarText} from './navbar.text';
+import {NavbarText} from '../navbar/navbar.text';
 import { LangService } from '../lang.service';
+
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  selector: 'app-side-nav',
+  templateUrl: './side-nav.component.html',
+  styleUrls: ['./side-nav.component.css']
 })
-export class NavbarComponent implements OnInit {
-  seifSgBrand = 'SeifSG';
+export class SideNavComponent implements OnInit {
   t: NavbarText; // t for text, easier to use in the html
-  @Input() sn: any;
   constructor(private lang: LangService) { }
 
   ngOnInit() {
