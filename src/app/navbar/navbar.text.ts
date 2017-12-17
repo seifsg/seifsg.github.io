@@ -7,4 +7,6 @@ export abstract class NavbarText {
     abstract portfolio: string;
     abstract about: string;
     abstract blog: string;
-    abstract usefulResources: string; }
+    abstract usefulResources: string;
+    abstract subBrand: string[]; }
+
