@@ -1,9 +1,22 @@
 .topbar {
   position: fixed;
+  background-color: #4d7ea8;
 }
 
 .spacer {
   flex: 1 1 auto;
+}
+
+#sgayerBrand{
+  display: none;
+}
+
+#navMenuButton{
+  display: none;
+}
+
+#navDash{
+  padding: 0 5px;
 }
 
 .navLinks {
@@ -54,4 +67,26 @@
   transition: opacity .25s;
   -webkit-animation: 0;
   animation: 0;
+}
+
+@media (min-width: 930px){
+  .navLinks {
+    display: inline-block;
+  }
+  #navMenu{
+    display: none;
+  }
+  #sgBrand{
+    display: none;
+  }
+  #sgayerBrand{
+    display: inline-block;
+    font-weight: 500;
+  }
+  #navDash{
+    padding: 0 10px;
+  }
+  #navMenuButton{
+    display: inline-block;
+  }
 }

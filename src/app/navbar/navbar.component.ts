@@ -8,7 +8,6 @@ import Typed from 'typed.js';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  seifSgBrand = 'SeifSG';
   t: NavbarText; // t for text, easier to use in the html
   @Input() sn: any;
   subBrand: Typed;

@@ -1,16 +1,28 @@
 <mat-toolbar color="primary" class="topbar">
   <mat-toolbar-row>
-    <button mat-icon-button (click)="sn.toggle()">
+    <button mat-icon-button id="navMenu" (click)="sn.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-    <span>{{seifSgBrand}}
-      <span id="dash"> - </span>
-      <small class="subBrand">Freelancer</small>
-      <span  id="subBrandCursor">|</span>
-    </span>
+    <span id="sgBrand">{{t.seifSgBrand}}</span>
+    <span id="sgayerBrand">{{t.seifSgayerBrand}}</span>
+    <span id="navDash"> - </span>
+    <small class="subBrand">Freelancer</small>
+    <span id="subBrandCursor">|</span>
+
     <span class="spacer"></span>
-    <button mat-button class="navLinks" routerLink="/">{{t.home}}</button>
-    <button mat-button class="navLinks" routerLink="/portfolio">{{t.portfolio}}</button>
-    <button mat-button class="navLinks" routerLink="/about">{{t.about}}</button>
+    <a mat-button class="navLinks" routerLink="/">{{t.home}}</a>
+    <a mat-button class="navLinks" routerLink="/portfolio">{{t.portfolio}}</a>
+    <a mat-button class="navLinks" href="https://medium.com/@seifsgayer" target="_blank">{{t.blog}}</a>
+    <a mat-button class="navLinks" routerLink="/contact">{{t.contact}}</a>
+    <a mat-button class="navLinks" routerLink="/about">{{t.about}}</a>
+    <a mat-icon-button id="navMenuButton" [matMenuTriggerFor]="appMenu">
+      <mat-icon>more_vert</mat-icon>
+    </a>
   </mat-toolbar-row>
 </mat-toolbar>
+
+<mat-menu #appMenu="matMenu">
+  <button mat-menu-item> {{t.currentActivity}} </button>
+  <button mat-menu-item> {{t.activitiesLog}} </button>
+  <button mat-menu-item> {{t.usefulResources}} </button>
+</mat-menu>
