@@ -75,3 +75,11 @@ html {
   -webkit-animation: 0;
   animation: 0;
 }
+
+
+@media (min-width: 600px){
+  .mat-app-background {
+    padding-top: 64px;
+    min-height: calc(100vh - 64px);
+  }
+}
