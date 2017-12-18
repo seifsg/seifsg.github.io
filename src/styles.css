@@ -7,22 +7,28 @@
 	20232a dark gunmetal
 	f5f5f5 white smoke
 	272932 steel blue
-
 */
 
-.mat-app-background{
-	padding-top: 55px;
-	min-height: calc(100vh - 55px);
+.mat-app-background {
+  padding-top: 55px;
+  min-height: calc(100vh - 55px);
 }
 
-html{
-	line-height: 0;
+html {
+  line-height: 0;
 }
 
-@media (min-width: 930px) {
-	.mat-button, .mat-fab, .mat-icon-button, .mat-mini-fab, .mat-raised-button,
-	.mat-toolbar, .mat-toolbar h1, .mat-toolbar h2, .mat-toolbar h3, .mat-toolbar h4, .mat-toolbar h5, .mat-toolbar h6
-	{
-		font-weight: 300;
-	}
+.mat-button,
+.mat-fab,
+.mat-icon-button,
+.mat-mini-fab,
+.mat-raised-button,
+.mat-toolbar,
+.mat-toolbar h1,
+.mat-toolbar h2,
+.mat-toolbar h3,
+.mat-toolbar h4,
+.mat-toolbar h5,
+.mat-toolbar h6 {
+  font-weight: 300;
 }

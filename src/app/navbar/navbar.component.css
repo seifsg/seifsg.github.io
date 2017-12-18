@@ -7,6 +7,9 @@
   flex: 1 1 auto;
 }
 
+#sgBrand{
+  font-weight: 500;
+}
 #sgayerBrand{
   display: none;
 }
