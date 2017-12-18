@@ -4,11 +4,13 @@
     min-height: calc(100vh - 56px);
     display: flex;
     align-items: center;
-    justify-content: center;
+	justify-content: center;
+	background-color: transparent;
   }
 
   header div {
-    max-width: 98%;
+	max-width: 98%;
+	background-color: transparent;
   }
 
   header div h1 {
