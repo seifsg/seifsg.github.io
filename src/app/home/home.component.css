@@ -1,0 +1,17 @@
+header{
+	text-align: center;
+	font-weight: unset;
+	min-height: calc(100vh - 56px);
+}
+
+header div h1{
+	font-family: 'Lato' , Arial ,sans-serif;
+	padding-top: 45px;
+}
+
+#availableButton{
+	font-size: 36px;
+	padding: 16px 32px;
+	color: #f5f5f5;
+	background-color: #4267b2;
+}

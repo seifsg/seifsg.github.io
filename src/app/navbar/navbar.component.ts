@@ -19,7 +19,10 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     this.t = this.lang.getNavbarText();
+    this.makeTyping();
+  }
 
+  makeTyping(): void {
     this.typingCursor = document.getElementById('subBrandCursor');
     this.typingCursor.className = 'hidden';
 
@@ -27,23 +30,22 @@ export class NavbarComponent implements OnInit {
       strings: this.getTypingStrings(),
       typeSpeed: 100,
       backSpeed: 100,
-      startDelay: 10000,
+      startDelay: 20000,
       autoInsertCss: false,
       showCursor: false,
       loop: false,
-      onComplete: (a, self) => {
-        setTimeout(() => {
-        this.typingCursor.className = 'hidden';
-        this.restartTyping();
-        }, 1000);
-      },
       onBegin: (self) => {
         setTimeout(() => {
           this.typingCursor.className = 'typed-cursor';
         }, self.options.startDelay - 500);
+      },
+      onComplete: (a, self) => {
+        setTimeout(() => {
+        this.typingCursor.className = 'typed-fade-out';
+        this.restartTyping();
+        }, 1000);
       }
     };
-
     this.startTyping();
   }
 
@@ -54,6 +56,7 @@ export class NavbarComponent implements OnInit {
   restartTyping(): void {
     // Assign new options after first typing
     this.typingOptions['strings'] = this.getTypingStrings();
+    this.typingOptions['startDelay'] = this.typingOptions['startDelay'] ? this.typingOptions['startDelay'] + 5000 : 15000 ;
     // Restart typing with new string each time
     this.subBrand = new Typed('.subBrand', this.typingOptions);
   }

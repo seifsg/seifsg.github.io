@@ -3,14 +3,8 @@ import {HomeText} from './home.text';
 // Home english text
 export class HomeEn extends HomeText {
     // static content
-    home = 'Home';
-    activities = 'Activities';
-    currentActivity = 'Current Activity';
-    activitiesLog = 'Activities Log';
-    portfolio = 'Portfolio';
-    about = 'About';
-    blog = 'Blog';
-    usefulResources = 'Useful Resources';
+    typingStrings = ['Let\s build something together.'];
+    getStarted = 'Get Started';
 
     // useful singleton here
     static init(): HomeText {
