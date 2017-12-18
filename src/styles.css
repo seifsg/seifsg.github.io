@@ -32,3 +32,9 @@ html {
 .mat-toolbar h6 {
   font-weight: 300;
 }
+
+.brand{
+	font-weight: 400;
+	font-family: 'Nunito Sans', sans-serif;
+  }
+  

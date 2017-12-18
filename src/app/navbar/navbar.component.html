@@ -1,10 +1,10 @@
-<mat-toolbar color="primary" class="topbar">
+<mat-toolbar class="topbar">
   <mat-toolbar-row>
     <button mat-icon-button id="navMenu" (click)="sn.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-    <span id="sgBrand">{{t.seifSgBrand}}</span>
-    <span id="sgayerBrand">{{t.seifSgayerBrand}}</span>
+    <span id="sgBrand" class="brand">{{t.seifSgBrand}}</span>
+    <span id="sgayerBrand" class="brand">{{t.seifSgayerBrand}}</span>
     <span id="navDash"> - </span>
     <small class="subBrand">Freelancer</small>
     <span id="subBrandCursor">|</span>
@@ -22,7 +22,7 @@
 </mat-toolbar>
 
 <mat-menu #appMenu="matMenu">
-  <button mat-menu-item> {{t.currentActivity}} </button>
-  <button mat-menu-item> {{t.activitiesLog}} </button>
-  <button mat-menu-item> {{t.usefulResources}} </button>
+  <button mat-menu-item class="navMenuLinks"> {{t.currentActivity}} </button>
+  <button mat-menu-item class="navMenuLinks"> {{t.activitiesLog}} </button>
+  <button mat-menu-item class="navMenuLinks"> {{t.usefulResources}} </button>
 </mat-menu>

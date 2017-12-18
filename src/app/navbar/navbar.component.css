@@ -1,6 +1,7 @@
 .topbar {
   position: fixed;
   background-color: #4d7ea8;
+  color: white;
 }
 
 .spacer {
@@ -24,6 +25,10 @@
 
 .navLinks {
   display: none;
+  text-transform: uppercase;
+}
+.navMenuLinks{
+  text-transform: capitalize;
 }
 
 .example-sidenav {
@@ -48,7 +53,7 @@
 
 .typed-cursor{
   display: inline-block;
-  margin-left: -5px;
+  margin-left: -2px;
   opacity: 1;
   animation: typedjsBlink 0.7s infinite;
   -webkit-animation: typedjsBlink 0.7s infinite;
@@ -84,7 +89,6 @@
   }
   #sgayerBrand{
     display: inline-block;
-    font-weight: 500;
   }
   #navDash{
     padding: 0 10px;
