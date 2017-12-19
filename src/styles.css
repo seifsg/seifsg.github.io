@@ -12,8 +12,8 @@
 
 .mat-app-background {
   padding-top: 56px;
-	min-height: calc(100vh - 56px);
-	line-height: 1.15;
+  min-height: calc(100vh - 56px);
+  line-height: 1.15;
 }
 
 html {
@@ -35,22 +35,25 @@ html {
   font-weight: 300;
 }
 
-.brand{
-	font-weight: 400;
-	font-family: 'Nunito Sans', sans-serif;
+.brand {
+  font-weight: 400;
+  font-family: 'Nunito Sans', sans-serif;
 }
-	
-	body{
-		font-family: 'Roboto,sans-serif';
-		text-rendering: optimizeLegibility !important;
-	}
 
-	
-.hidden{
+body {
+  font-family: 'Roboto,sans-serif';
+  text-rendering: optimizeLegibility !important;
+}
+
+.whole {
+  min-height: calc(100vh - 56px);
+}
+
+.hidden {
   display: none;
 }
 
-.typed-cursor{
+.typed-cursor {
   display: inline-block;
   margin-left: -2px;
   opacity: 1;
@@ -58,28 +61,43 @@ html {
   -webkit-animation: typedjsBlink 0.7s infinite;
 }
 
-@keyframes typedjsBlink{
-  0% { opacity: 1; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1; }
+@keyframes typedjsBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-@-webkit-keyframes typedjsBlink{
-  0% { opacity: 1; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1; }
+@-webkit-keyframes typedjsBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-.typed-fade-out{
+
+.typed-fade-out {
   opacity: 0;
   transition: opacity .25s;
   -webkit-animation: 0;
   animation: 0;
 }
 
-
-@media (min-width: 600px){
+@media (min-width: 600px) {
   .mat-app-background {
     padding-top: 64px;
+    min-height: calc(100vh - 64px);
+  }
+  .whole {
     min-height: calc(100vh - 64px);
   }
 }

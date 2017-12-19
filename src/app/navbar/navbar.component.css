@@ -2,6 +2,7 @@
   position: fixed;
   background-color: #45a3e6;
   color: white;
+  z-index: 1000;
 }
 
 .spacer {
