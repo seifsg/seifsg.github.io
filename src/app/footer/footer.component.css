@@ -1,0 +1,10 @@
+footer{
+  padding: 20px;
+  text-align: center;
+  background-color: #20232a;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.15;
+  color: #cfd8dc;
+}
+footer span{}
