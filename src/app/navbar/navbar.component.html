@@ -3,18 +3,21 @@
     <button mat-icon-button id="navMenu" (click)="sn.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-    <span id="sgBrand" class="brand">{{t.seifSgBrand}}</span>
-    <span id="sgayerBrand" class="brand">{{t.seifSgayerBrand}}</span>
-    <span id="navDash"> - </span>
-    <small class="subBrand">Freelancer</small>
-    <span id="subBrandCursor">|</span>
+
+    <a routerLink="/" fragment="contact">
+      <span id="sgBrand" class="brand">{{t.seifSgBrand}}</span>
+      <span id="sgayerBrand" class="brand">{{t.seifSgayerBrand}}</span>
+      <span id="navDash"> - </span>
+      <small class="subBrand">Freelancer</small>
+      <span id="subBrandCursor">|</span>
+    </a>
 
     <span class="spacer"></span>
-    <a mat-button class="navLinks" routerLink="/">{{t.home}}</a>
-    <a mat-button class="navLinks" routerLink="/portfolio">{{t.portfolio}}</a>
-    <a mat-button class="navLinks" href="https://medium.com/@seifsgayer" target="_blank">{{t.blog}}</a>
-    <a mat-button class="navLinks" routerLink="/contact">{{t.contact}}</a>
-    <a mat-button class="navLinks" routerLink="/about">{{t.about}}</a>
+    <a mat-button class="navLinks"  routerLinkActive="active" routerLink="/">{{t.home}}</a>
+    <a mat-button class="navLinks" routerLink="/portfolio" routerLinkActive="active">{{t.portfolio}}</a>
+    <a mat-button class="navLinks" href="https://medium.com/@seifsgayer" routerLinkActive="active">{{t.blog}}</a>
+    <a mat-button class="navLinks" routerLink="/contact" routerLinkActive="active">{{t.contact}}</a>
+    <a mat-button class="navLinks" routerLink="/about" routerLinkActive="active">{{t.about}}</a>
     <a mat-icon-button id="navMenuButton" [matMenuTriggerFor]="appMenu">
       <mat-icon>more_vert</mat-icon>
     </a>

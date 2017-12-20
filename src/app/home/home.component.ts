@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/map';
 import {HomeText} from './home.text';
 import { LangService } from '../lang.service';
 import Typed from 'typed.js';
@@ -10,18 +13,33 @@ import Typed from 'typed.js';
 })
 export class HomeComponent implements OnInit {
 
+  token: Observable<string>;
+
   t: HomeText;
   typingOptions: Object;
   typingCursor: any;
   typingStrings: string[];
   typedHomeText: Typed;
 
-  constructor(private lang: LangService) { }
+  constructor(private lang: LangService, private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.t = this.lang.getHomeText();
     this.typingCursor = document.getElementById('homeTypedTextCursor');
     this.makeTyping();
+
+    // Capture the fragment if available
+    this.token = this.route.fragment.map(f => f || 'None');
+
+    this.route.fragment
+                .subscribe(fragment => {
+                    const el = document.getElementById(fragment);
+                    if (el) {
+                      el.scrollIntoView();
+                    }else {
+                      window.scrollTo(0, 0);
+                    }
+                });
   }
 
 
@@ -47,7 +65,6 @@ export class HomeComponent implements OnInit {
     };
 
     this.typedHomeText = new Typed('.homeTypedText', this.typingOptions);
-
   }
 
   getTypingString(): string[] {

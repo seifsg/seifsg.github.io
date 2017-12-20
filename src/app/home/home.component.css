@@ -6,17 +6,25 @@
     align-items: center;
     justify-content: center;
     background-color: transparent;
+    position: relative;
   }
 
   header div {
-    max-width: 98%;
-    background-color: transparent;
+    margin: auto;
+  }
+
+  .vid{
+    display: none;
+  }
+  .vidOverlay{
+    display: none;
   }
 
   header div h1 {
     font-family: 'Lato', Arial, sans-serif;
     margin-bottom: 30px;
     margin-top: -30px;
+    position: relative;
   }
 
   section h1.mat-display-1,  section.mat-typography h1.mat-display-1 {
@@ -47,15 +55,38 @@
     header {
       min-height: 100vh;
       margin-top: -64px;
+      background-image: url(../../assets/Hello-World.jpg);
     }
     header div h1 {
       padding-top: 10px;
       font-size: 80px;
       line-height: 80px;
       margin-bottom: 50px;
+      color: #fff;
+    }
+    .vid{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      max-width: none;
+      display: block;
+    }
+    .vidOverlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,.1);
+      display: block;
     }
   }
 
-  @media (min-width: 900px) {}
+  @media (min-width: 900px) {
+  }
 
   @media (min-width: 1280px) {}

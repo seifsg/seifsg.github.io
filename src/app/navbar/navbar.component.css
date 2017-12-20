@@ -1,3 +1,6 @@
+a:hover{
+  text-decoration: none;
+}
 .topbar {
   position: fixed;
   background-color: #22509b;
