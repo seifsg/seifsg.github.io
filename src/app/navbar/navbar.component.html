@@ -4,7 +4,7 @@
       <mat-icon>menu</mat-icon>
     </button>
 
-    <a routerLink="/" fragment="contact">
+    <a routerLink="/">
       <span id="sgBrand" class="brand">{{t.seifSgBrand}}</span>
       <span id="sgayerBrand" class="brand">{{t.seifSgayerBrand}}</span>
       <span id="navDash"> - </span>
@@ -16,7 +16,7 @@
     <a mat-button class="navLinks"  routerLinkActive="active" routerLink="/">{{t.home}}</a>
     <a mat-button class="navLinks" routerLink="/portfolio" routerLinkActive="active">{{t.portfolio}}</a>
     <a mat-button class="navLinks" href="https://medium.com/@seifsgayer" routerLinkActive="active">{{t.blog}}</a>
-    <a mat-button class="navLinks" routerLink="/contact" routerLinkActive="active">{{t.contact}}</a>
+    <a mat-button class="navLinks" routerLink="/" fragment="contact" routerLinkActive="active">{{t.contact}}</a>
     <a mat-button class="navLinks" routerLink="/about" routerLinkActive="active">{{t.about}}</a>
     <a mat-icon-button id="navMenuButton" [matMenuTriggerFor]="appMenu">
       <mat-icon>more_vert</mat-icon>

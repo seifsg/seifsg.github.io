@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/map';
 import {HomeText} from './home.text';
 import { LangService } from '../lang.service';
 import Typed from 'typed.js';
@@ -12,8 +10,6 @@ import Typed from 'typed.js';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  token: Observable<string>;
 
   t: HomeText;
   typingOptions: Object;
@@ -27,9 +23,6 @@ export class HomeComponent implements OnInit {
     this.t = this.lang.getHomeText();
     this.typingCursor = document.getElementById('homeTypedTextCursor');
     this.makeTyping();
-
-    // Capture the fragment if available
-    this.token = this.route.fragment.map(f => f || 'None');
 
     this.route.fragment
                 .subscribe(fragment => {
