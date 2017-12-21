@@ -64,7 +64,7 @@
     color: #333;
   }
 
-  .subDisp{
+  .subDisp {
     padding: .75rem;
   }
 
@@ -72,10 +72,7 @@
     margin: 0;
     color: #c11a2c;
     text-transform: uppercase;
-    font-family: Lato;
-    font: 700 24px/34px Lato, Roboto, "Helvetica Neue", sans-serif;
   }
-
 
   .services-grid {
     display: -webkit-box;
@@ -104,7 +101,7 @@
     transition: all 0.3s ease;
   }
 
-  .service h2{
+  .service h2 {
     color: #c11a2c;
   }
 
@@ -115,11 +112,11 @@
     border: 2px solid rgba(96, 125, 139, 0.72);
   }
 
-  .service > * {
+  .service>* {
     flex: 1 1 100%;
   }
 
-  .service mat-icon{
+  .service mat-icon {
     font-size: 6.45rem;
     margin-top: -10px;
     height: unset;
@@ -136,12 +133,16 @@
       line-height: 80px;
       margin-bottom: 50px;
     }
-    #services h1 {
+    section h1.mat-display-1,
+    section.mat-typography h1.mat-display-1 {
       font-size: 50px;
-      line-height: 38px;
-      padding-top: 30px;
+      text-transform: uppercase;
+      font: 700 50px/38px Lato, Roboto, "Helvetica Neue", sans-serif;
     }
-    #services p{
+    #services h1 {
+      padding: 30px;
+    }
+    #services p {
       font-size: 22px;
       line-height: 30px;
     }
@@ -172,7 +173,9 @@
       -webkit-box-orient: horizontal;
       flex-direction: row;
     }
-    .service{height: 330px;}
+    .service {
+      height: 330px;
+    }
   }
 
   @media (min-width: 1280px) {}

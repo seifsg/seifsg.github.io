@@ -136,7 +136,6 @@ a:hover{
   }
   .whole {
     min-height: calc(100vh - 64px);
-    padding-top: 64px;
   }
 }
 
