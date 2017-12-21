@@ -28,7 +28,9 @@ export class HomeComponent implements OnInit {
                 .subscribe(fragment => {
                     const el = document.getElementById(fragment);
                     if (el) {
+                      window['elll'] = el;
                       el.scrollIntoView();
+                      window.scrollTo(0, window.scrollY - 10);
                     }else {
                       window.scrollTo(0, 0);
                     }

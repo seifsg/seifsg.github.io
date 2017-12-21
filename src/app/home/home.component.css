@@ -5,18 +5,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: transparent;
+    background-image: url(../../assets/Hello-World.jpg);
     position: relative;
+    color: #fff;
   }
 
   header div {
     margin: auto;
   }
 
-  .vid{
+  .vid {
     display: none;
   }
-  .vidOverlay{
+
+  .vidOverlay {
     display: none;
   }
 
@@ -27,9 +29,14 @@
     position: relative;
   }
 
-  section h1.mat-display-1,  section.mat-typography h1.mat-display-1 {
-	font-weight: 700;
-	text-align: center;
+  section {
+    text-align: center;
+  }
+
+  section h1.mat-display-1,
+  section.mat-typography h1.mat-display-1 {
+    font-weight: 700;
+    text-align: center;
   }
 
   #availableButton {
@@ -51,20 +58,94 @@
     border-width: 2px;
   }
 
-  @media (min-width: 600px) {
+  #services {
+    background-color: #fff;
+    font: 400 16px/26px Lato, Roboto, "Helvetica Neue", sans-serif;
+    color: #333;
+  }
+
+  .subDisp{
+    padding: .75rem;
+  }
+
+  #services h1 {
+    margin: 0;
+    color: #c11a2c;
+    text-transform: uppercase;
+    font-family: Lato;
+    font: 700 24px/34px Lato, Roboto, "Helvetica Neue", sans-serif;
+  }
+
+
+  .services-grid {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .service {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    -webkit-box-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #e7e7e7;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .service h2{
+    color: #c11a2c;
+  }
+
+  .service:hover {
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    border: 2px solid rgba(96, 125, 139, 0.72);
+  }
+
+  .service > * {
+    flex: 1 1 100%;
+  }
+
+  .service mat-icon{
+    font-size: 6.45rem;
+    margin-top: -10px;
+    height: unset;
+  }
+
+  @media (min-width: 600px) and (min-height: 500px) {
     header {
       min-height: 100vh;
       margin-top: -64px;
-      background-image: url(../../assets/Hello-World.jpg);
     }
     header div h1 {
       padding-top: 10px;
       font-size: 80px;
       line-height: 80px;
       margin-bottom: 50px;
-      color: #fff;
     }
-    .vid{
+    #services h1 {
+      font-size: 50px;
+      line-height: 38px;
+      padding-top: 30px;
+    }
+    #services p{
+      font-size: 22px;
+      line-height: 30px;
+    }
+    .vid {
       position: absolute;
       right: 0;
       bottom: 0;
@@ -75,18 +156,23 @@
       max-width: none;
       display: block;
     }
-    .vidOverlay{
+    .vidOverlay {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0,0,0,.1);
+      background: rgba(0, 0, 0, .1);
       display: block;
     }
   }
 
   @media (min-width: 900px) {
+    .services-grid {
+      -webkit-box-orient: horizontal;
+      flex-direction: row;
+    }
+    .service{height: 330px;}
   }
 
   @media (min-width: 1280px) {}

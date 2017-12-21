@@ -61,6 +61,7 @@ a:hover{
 
 .whole {
   min-height: calc(100vh - 56px);
+  padding-top: 56px;
 }
 
 .whole h1{
@@ -135,6 +136,7 @@ a:hover{
   }
   .whole {
     min-height: calc(100vh - 64px);
+    padding-top: 64px;
   }
 }
 

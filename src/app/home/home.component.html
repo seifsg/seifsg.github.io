@@ -1,23 +1,57 @@
 <div class="mat-app-background">
   <header>
-      <video autoplay="" class="vid" loop="" muted="" playsinline="">
-          <source src="../../assets/Hello-World.mp4" type="video/mp4">
-      </video>
-      <div class="vidOverlay"></div>
+    <video autoplay="" class="vid" loop="" muted="" playsinline="">
+      <source src="assets/Hello-World.mp4" type="video/mp4">
+    </video>
+    <div class="vidOverlay"></div>
     <div>
       <h1 class="mat-display-3">
         <span class="homeTypedText"></span>
         <span id="homeTypedTextCursor">|</span>
       </h1>
-      <button mat-raised-button id="availableButton" style="display: none" class="animated">{{t.getStarted}}</button>
+      <button mat-raised-button routerLink="/" fragment="services" id="availableButton" style="display: none" class="animated">{{t.getStarted}}</button>
     </div>
   </header>
-  <section class="whole mat-typography">
-    <h1 class="mat-display-1">Services</h1>
-
+  <section id="services" class="whole mat-typography">
+    <h1 class="mat-display-1">What can 'WE' do?</h1>
+    <div class="subDisp">
+      <p>
+        You and I can introduce sophistically engineered solutions to the world using amazing technologies!
+      </p>
+    </div>
+    <div class="services-grid">
+      <div class="service">
+        <mat-icon>settings_applications</mat-icon>
+        <h2>Applications</h2>
+        <p>
+          Whether it is for the Web or Desktop
+        </p>
+        <p>
+          Together we can develop the most brilliantly engineered solutions
+        </p>
+        <p>&nbsp;</p>
+      </div>
+      <div class="service">
+        <mat-icon>people</mat-icon>
+        <h2>Improuvments & Consulting</h2>
+        <p>
+          You are a perfectionist.
+        </p>
+        <p>You are looking for a powerful asset to deliver more efficient, faster and better!</p>
+      </div>
+      <div class="service">
+        <mat-icon>whatshot</mat-icon>
+        <h2>Ideas</h2>
+        <p>You have plenty of innovative ideas</p>
+        <p>
+          A Blockchain tool? A Chatbot?
+          <br> Your partner here always loves to work on new technologies!
+        </p>
+      </div>
+    </div>
   </section>
   <section id="contact" class="whole mat-typography">
-    <h1 class="mat-display-1">Contact</h1>
+    <h1 class="mat-display-1">Let's chat!</h1>
 
   </section>
 </div>
