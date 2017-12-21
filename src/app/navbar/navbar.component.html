@@ -13,9 +13,9 @@
     </a>
 
     <span class="spacer"></span>
-    <a mat-button class="navLinks"  routerLinkActive="active" routerLink="/">{{t.home}}</a>
+    <a mat-button class="navLinks" routerLinkActive="active" routerLink="/">{{t.home}}</a>
     <a mat-button class="navLinks" routerLink="/portfolio" routerLinkActive="active">{{t.portfolio}}</a>
-    <a mat-button class="navLinks" href="https://medium.com/@seifsgayer" routerLinkActive="active">{{t.blog}}</a>
+    <a mat-button class="navLinks" [matMenuTriggerFor]="activitiesMenu">{{t.activities}}</a>
     <a mat-button class="navLinks" routerLink="/" fragment="contact" routerLinkActive="active">{{t.contact}}</a>
     <a mat-button class="navLinks" routerLink="/about" routerLinkActive="active">{{t.about}}</a>
     <a mat-icon-button id="navMenuButton" [matMenuTriggerFor]="appMenu">
@@ -24,8 +24,14 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
-<mat-menu #appMenu="matMenu">
+
+<mat-menu #activitiesMenu="matMenu">
   <button mat-menu-item class="navMenuLinks"> {{t.currentActivity}} </button>
   <button mat-menu-item class="navMenuLinks"> {{t.activitiesLog}} </button>
+</mat-menu>
+
+
+<mat-menu #appMenu="matMenu">
+  <a mat-menu-item class="navMenuLinks" href="https://medium.com/@seifsgayer" routerLinkActive="active">{{t.blog}}</a>
   <button mat-menu-item class="navMenuLinks"> {{t.usefulResources}} </button>
 </mat-menu>
