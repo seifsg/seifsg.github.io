@@ -69,7 +69,7 @@ a:hover{
 }
 
 .mat-display-1, .mat-typography .mat-display-1{
-  margin: 30px 0;
+  margin: 0;
 }
 
 .readingBg{
@@ -127,6 +127,26 @@ a:hover{
   transition: opacity .25s;
   -webkit-animation: 0;
   animation: 0;
+}
+
+.niceButton{
+  font-size: 36px;
+  padding: 16px 32px;
+  color: #f5f5f5;
+  background-color: #4267b2;
+  transition: all .1s ease-in-out .1s;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+}
+
+.niceButton:hover {
+  background-color: white;
+  color: #45a3e6;
+  border-color: #45a3e6;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 2px;
+  text-decoration: none;
 }
 
 @media (min-width: 600px) {

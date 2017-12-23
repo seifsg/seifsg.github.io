@@ -122,6 +122,53 @@
     height: unset;
   }
 
+
+  /* Contact styles */
+
+  #contact{
+    font: 400 16px/26px Lato, Roboto, "Helvetica Neue", sans-serif;
+  }
+
+  #contact div{
+    width: 100%;
+  }
+
+  #contact ul {
+    margin: auto;
+    padding: 0;
+    list-style-type: none;
+    width: auto;
+  }
+  #contact ul li{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #20232a;
+    float: left;
+    padding: 2%;
+  }
+
+  .mat-fab.mat-accent, .mat-mini-fab.mat-accent, .mat-raised-button.mat-accent {
+    background-color: #4267b2;
+  }
+
+  a.mat-fab.mat-accent {
+    font-size: 32px;
+    height: 64px;
+    width: 64px;
+  }
+
+  @media (min-width: 400px){
+    #contact ul {
+      margin: auto;
+      padding: 0;
+      list-style-type: none;
+      width: 400px;
+      height: 80px;
+    }
+  }
+
   @media (min-width: 600px) and (min-height: 500px) {
     header {
       min-height: 100vh;
@@ -143,7 +190,7 @@
       padding: 30px;
     }
     #services p {
-      font-size: 22px;
+      font-size: 16px;
       line-height: 30px;
     }
     .vid {
@@ -178,4 +225,8 @@
     }
   }
 
-  @media (min-width: 1280px) {}
+  @media (min-width: 1280px) {
+    #services p {
+      font-size: 22px;
+    }
+  }
