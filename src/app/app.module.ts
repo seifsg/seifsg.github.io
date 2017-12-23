@@ -14,6 +14,7 @@ import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { CurrentActivityComponent } from './current-activity/current-activity.component';
+import { ActivitiesLogComponent } from './activities-log/activities-log.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { CurrentActivityComponent } from './current-activity/current-activity.co
     AboutComponent,
     FooterComponent,
     PortfolioComponent,
-    CurrentActivityComponent
+    CurrentActivityComponent,
+    ActivitiesLogComponent
   ],
   imports: [
     BrowserModule,
