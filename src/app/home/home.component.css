@@ -169,7 +169,7 @@
     }
   }
 
-  @media (min-width: 600px) and (min-height: 500px) {
+  @media (min-width: 600px) {
     header {
       min-height: 100vh;
       margin-top: -64px;
@@ -212,6 +212,12 @@
       bottom: 0;
       background: rgba(0, 0, 0, .1);
       display: block;
+    }
+  }
+
+  @media (max-height: 500px){
+    .vid {
+      width: 100vh;
     }
   }
 

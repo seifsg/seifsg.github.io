@@ -26,12 +26,12 @@
 
 
 <mat-menu #activitiesMenu="matMenu">
-  <button mat-menu-item class="navMenuLinks"> {{t.currentActivity}} </button>
-  <button mat-menu-item class="navMenuLinks"> {{t.activitiesLog}} </button>
+  <button mat-menu-item routerLink="/current-activity" class="navMenuLinks"> {{t.currentActivity}} </button>
+  <button mat-menu-item routerLink="/activities-log" class="navMenuLinks"> {{t.activitiesLog}} </button>
 </mat-menu>
 
 
 <mat-menu #appMenu="matMenu">
   <a mat-menu-item class="navMenuLinks" href="https://medium.com/@seifsgayer" routerLinkActive="active">{{t.blog}}</a>
-  <button mat-menu-item class="navMenuLinks"> {{t.usefulResources}} </button>
+  <button mat-menu-item routerLink="/useful" class="navMenuLinks"> {{t.usefulResources}} </button>
 </mat-menu>
