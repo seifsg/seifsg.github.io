@@ -13,6 +13,7 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { CurrentActivityComponent } from './current-activity/current-activity.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     SideNavComponent,
     AboutComponent,
     FooterComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    CurrentActivityComponent
   ],
   imports: [
     BrowserModule,
