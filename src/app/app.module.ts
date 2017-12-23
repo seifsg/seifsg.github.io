@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { CurrentActivityComponent } from './current-activity/current-activity.component';
 import { ActivitiesLogComponent } from './activities-log/activities-log.component';
+import { UsefulResComponent } from './useful-res/useful-res.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ActivitiesLogComponent } from './activities-log/activities-log.componen
     FooterComponent,
     PortfolioComponent,
     CurrentActivityComponent,
-    ActivitiesLogComponent
+    ActivitiesLogComponent,
+    UsefulResComponent
   ],
   imports: [
     BrowserModule,
