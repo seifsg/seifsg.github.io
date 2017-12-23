@@ -12,6 +12,7 @@ import {LangService} from './lang.service';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     SideNavComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
