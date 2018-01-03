@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {NavbarText} from './navbar.text';
+import { NavbarText } from '../../lang/en/navbar.text';
 import { LangService } from '../lang.service';
 import Typed from 'typed.js';
 @Component({

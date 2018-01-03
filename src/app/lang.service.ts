@@ -1,11 +1,15 @@
 import { Injectable } from '@angular/core';
 // Navbar imports
-import { NavbarText } from './navbar/navbar.text';
-import { NavbarEn } from './navbar/navbar.s.en';
+import { NavbarText } from '../lang/en/navbar.text';
+import { NavbarEn } from '../lang/en/navbar.s.en';
 
 // Home imports
-import { HomeText } from './home/home.text';
-import { HomeEn } from './home/home.s.en';
+import { HomeText } from '../lang/en/home.text';
+import { HomeEn } from '../lang/en/home.s.en';
+
+// Footer imports
+import { FooterText } from '../lang/en/footer.text';
+import { FooterEn } from '../lang/en/footer.s.en';
 
 // The service responsible for showing any text on the website
 // by language
@@ -29,6 +33,10 @@ export class LangService {
 
   getHomeText(): HomeText {
     return HomeEn.init();
+  }
+
+  getFooterText(): FooterText {
+    return FooterEn.init();
   }
 
 }

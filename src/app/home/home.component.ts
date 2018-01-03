@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {HomeText} from './home.text';
+import { HomeText } from '../../lang/en/home.text';
 import { LangService } from '../lang.service';
 import Typed from 'typed.js';
 
