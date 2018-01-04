@@ -1,0 +1,25 @@
+{
+  "name": "seifsg.github.io",
+  "version": "1.0.0",
+  "description": "SeifSg's personal website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \\\"no tests\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seifsg/seifsg.github.io.git"
+  },
+  "keywords": [
+    "seifsg",
+    "seifsgayer",
+    "personal",
+    "website"
+  ],
+  "author": "Seif Sgayer",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/seifsg/seifsg.github.io/issues"
+  },
+  "homepage": "https://github.com/seifsg/seifsg.github.io#readme"
+}
