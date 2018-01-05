@@ -22,8 +22,7 @@ To get started visit seifsg.com
 - JavaScript
 - jQuery
 - BootStrap
-- Jade
-- Grunt
+- Pug
 - Parcel
 
 ## Getting Help
