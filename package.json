@@ -4,7 +4,7 @@
   "description": "SeifSg's personal website",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"no tests\" && exit 1"
+    "test": "echo \"no tests\" && exit 0"
   },
   "repository": {
     "type": "git",
