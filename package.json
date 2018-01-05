@@ -22,5 +22,12 @@
     "url": "https://github.com/seifsg/seifsg.github.io/issues"
   },
   "homepage": "https://github.com/seifsg/seifsg.github.io#readme",
-  "dependencies": {}
+  "dependencies": {
+    "gulp-parcel": "^0.2.3",
+    "parcel-plugin-pug": "^0.2.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "parcel-bundler": "^1.4.1"
+  }
 }
