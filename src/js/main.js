@@ -1,5 +1,16 @@
-//jQuery is required to run this code
+import Typed from './typed';
+
 $( document ).ready(function() {
+
+    var typed = new Typed(".hero-text", {
+        strings: ['Some <i>strings</i> with', 'Some <strong>HTML</strong>', 'Chars &times; &copy;'],
+        typeSpeed: 100,
+        backSpeed: 30,
+        onBegin: (self) => { // i made that :)
+          console.log('Hello there');
+          console.log(self);
+        }
+      });
 
     scaleVideoContainer();
 
