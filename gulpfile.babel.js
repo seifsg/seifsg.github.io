@@ -17,7 +17,7 @@ const paths = {
 	}
 };
 
-gulp.task('parcel', run('parcel watch src/templates/index.pug --no-cache'));
+gulp.task('parcel', run('parcel watch src/templates/index.pug --public-url ./ --no-cache'));
 
 const reload = done => {
 	server.reload();
