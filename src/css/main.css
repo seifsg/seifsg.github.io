@@ -1,3 +1,5 @@
+/* Hero */
+
 .homepage-hero-module {
     border-right: none;
     border-left: none;
@@ -48,6 +50,27 @@
     width: 100%;
 }
 
+#textHero {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    z-index: 10;
+    margin: auto;
+}
+
+.hero-text {
+    margin: auto;
+}
+
+
+/* The end of the Hero */
+
+
+/* typed and its baggage */
+
 .typed-cursor {
     display: inline-block;
     margin-left: -2px;
@@ -87,17 +110,56 @@
     animation: 0;
 }
 
-#textHero {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+
+/* The end of typed and its baggage */
+
+
+/* here comes dat side nav*/
+
+#sidenav {
+    background-color: #222;
     color: white;
-    z-index: 10;
-    margin: auto;
+    width: 240px;
+    position: fixed;
+    min-height: 100vh;
+    padding: 20px;
 }
 
-.hero-text {
-    margin: auto;
+#logo {}
+
+#logoImg {}
+
+#logoText {}
+
+#brand {}
+
+#slogan {}
+
+#sidenav>ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
 }
+
+#sidenav>ul>li {}
+
+#socialIcons {}
+
+#socialIcons>ul {
+    list-style: none;
+}
+
+#socialIcons>ul>li {}
+
+.sideFooter {}
+
+
+/* end of dat boi sidenav*/
+
+/* main layout and stuff */
+
+main{
+    padding-left: 240px;
+}
+
+/* end of everything/main layout and stuff */
