@@ -13,8 +13,9 @@ body {
 
 .whole {
     min-height: 100vh;
-    padding: 15px;
+    padding: 0;
 }
+
 
 ::selection {
     background-color: #0274ff;
@@ -157,6 +158,10 @@ a.card:hover {
     border-right: none;
     border-left: none;
     position: relative;
+    background-image: url('../imgs/In-The-Clouds.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .no-video .video-container video,
@@ -173,34 +178,18 @@ a.card:hover {
     position: relative;
     bottom: 0%;
     left: 0%;
-    height: 100%;
-    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
     overflow: hidden;
-    background: #000;
-}
-
-.video-container .poster img {
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-    z-index: 0;
-}
-
-.video-container .filter {
-    z-index: 100;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.4);
-    width: 100%;
+    background: transparent;
 }
 
 .video-container video {
+    min-height: 100%;
+    min-width: 100%;
     position: absolute;
     z-index: 1;
     bottom: 0;
-}
-
-.video-container video.fillWidth {
-    width: 100%;
 }
 
 #textHero {
@@ -277,7 +266,7 @@ a.card:hover {
     min-height: 100vh;
     padding: 20px;
     margin-left: -240px;
-    transition: margin .3s ease-in .2s;
+    transition: margin .3s ease-out .2s;
     display: flex;
     align-items: center;
     z-index: 1000;
@@ -391,7 +380,7 @@ a.card:hover {
 
 main {
     padding-left: 0;
-    transition: padding .3s ease-in .2s;
+    transition: padding .3s ease-in .1s;
 }
 
 
