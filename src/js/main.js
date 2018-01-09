@@ -1,5 +1,12 @@
 import Typed from './typed';
 
+// vars and stuff
+const times = $("#times");
+const sidebar = $("#sidenav"); //who cares how it is named
+const main = $("main");
+
+times.on('click', toggleSideBar);
+
 $( document ).ready(function() {
 
     var typed = new Typed(".hero-text", {
@@ -71,4 +78,25 @@ function scaleBannerVideoSize(element){
         $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
 
     });
+}
+
+function toggleSideBar(){
+
+    console.log('hi');
+    if( sidebar.attr('data-state') == undefined ){
+        sidebar.attr('data-state','closed');
+    }
+    
+    if(sidebar.attr('data-state') == 'closed'){
+        sidebar.css('margin-left','0');
+        main.css('padding-left','240px');
+
+        sidebar.attr('data-state','open');
+    }else{
+        sidebar.css('margin-left','-240px');
+        main.css('padding-left','0');
+
+        sidebar.attr('data-state','closed');
+    }
+
 }
