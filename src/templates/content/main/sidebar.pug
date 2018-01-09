@@ -1,26 +1,42 @@
 nav#sidenav
 	#times 
 		i.fa.fa-times(aria-hidden='true')
-	#logo
-		#logoImg
-		#logoText
-			#brand Seif Sgayer
-			#slogan Freelance Developer
-	ul
-		li Portfolio
-		li About me
-		li Hire me
-		li Blog
-		li More :)
-	#socialIcons
+	.container-fluid
+		#logo
+			#logoImg
+			#logoText
+				#brand Seif Sgayer
+				#slogan Freelance Developer
 		ul
-			li 
-				i.fa.fa-github(aria-hidden='true')
-			li 
-				i.fa.fa-linkedin(aria-hidden='true')
-			li 
-				i.fa.fa-skype(aria-hidden='true')
 			li
-				i.fa.fa-envelope(aria-hidden='true')
-	.sideFoooter Made by me with 
-		i.fa.fa-heart(aria-hidden='true')
+				a(href='#portfolio') Portfolio
+			li
+				a(href='#aboutme') About me
+			li
+				a(href='#hireme') 
+					span#hireme Hire me
+			li
+				a(href='#portfolio') Blog
+			li
+				a(href='#portfolio') More :)
+		// because social icons blocked by adblock
+		#soupeIcons 
+			ul
+				li 
+					a(href="#")
+						i.fa.fa-github(aria-hidden='true')
+				li 
+					a(href="#")
+						i.fa.fa-linkedin(aria-hidden='true')
+				li 
+					a(href="#")
+						i.fa.fa-skype(aria-hidden='true')
+				li 
+					a(href="#", title='Actually Discord', data-toggle='tooltip')
+						i.fa.fa-comments(aria-hidden='true')
+				li
+					a(href="#")
+						i.fa.fa-envelope(aria-hidden='true')
+		.sideFooter 
+			a(href="", title="Site's Source Code", data-toggle='tooltip', data-placement='right') Design &amp; Development by me with 
+				i.fa.fa-heart(aria-hidden='true')
