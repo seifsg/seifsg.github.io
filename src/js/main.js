@@ -2,6 +2,7 @@ import Typed from './typed';
 
 // vars and stuff
 const times = $("#times");
+const timesI = $("#times i");
 const sidebar = $("#sidenav"); //who cares how it is named
 const main = $("main");
 const hireMe = $("#hireme");
@@ -21,11 +22,6 @@ $(document).ready(function () {
     });
 
     $('[data-toggle="tooltip"]').tooltip();
-
-    $(main).fullpage({
-        scrollOverflow: true,
-        lazyLoad: true
-    });
 
     scaleVideoContainer();
 
@@ -100,8 +96,13 @@ function toggleSideBar() {
 
     if (sidebar.attr('data-state') == 'closed') {
         // opening
-        sidebar.css('margin-left', '0');
-        main.css('padding-left', '240px');
+        main.addClass('padded');
+        sidebar.addClass('opened');
+
+        // icon sudden change
+        timesI.removeClass('fa-arrow-right');
+        timesI.addClass('fa-arrow-left');
+        times.css('margin-right','0');
 
         // dat jucy hire me action
         hireMe.css('color', "#fff");
@@ -111,9 +112,15 @@ function toggleSideBar() {
         sidebar.attr('data-state', 'open');
     } else {
         //closing
-        sidebar.css('margin-left', '-240px');
-        main.css('padding-left', '0');
+        main.removeClass('padded');
+        sidebar.removeClass('opened');
 
+        // icon back
+        timesI.removeClass('fa-arrow-left');
+        timesI.addClass('fa-arrow-right');
+        times.css('margin-right','-50px');
+
+        // no more action
         hireMe.removeClass('animated flash');
 
         sidebar.attr('data-state', 'closed');

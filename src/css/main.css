@@ -283,6 +283,10 @@ a.card:hover {
     z-index: 1000;
 }
 
+#sidenav.opened {
+    margin-left: 0;
+}
+
 #logo {}
 
 #logoImg {}
@@ -372,9 +376,11 @@ a.card:hover {
     float: right;
     background-color: #222;
     margin-right: -50px;
-    top: 0;
+    bottom: 20px;
     right: 0;
     font-size: 23px;
+    transition: all .3s ease-in-out .1s;
+    cursor: pointer;
 }
 
 
@@ -394,5 +400,21 @@ main {
     transition: padding .3s ease-in .2s;
 }
 
+main.padded{
+    padding-left: 240px;
+}
+
 
 /* end of everything/main layout and stuff */
+
+/* articles damn */
+.articles{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    background-color: #fff;
+    border-radius: 2px;
+}
+.container article{}
+.container article h1{}
+.container article p{}
+
+/* all things come to an end even ARTICLES */
