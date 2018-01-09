@@ -22,6 +22,10 @@ $(document).ready(function () {
 
     $('[data-toggle="tooltip"]').tooltip();
 
+    $(main).fullpage({
+        scrollOverflow: true,
+        lazyLoad: true
+    });
 
     scaleVideoContainer();
 

@@ -8,6 +8,7 @@ body {
     color: rgba(0, 0, 0, 0.87);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    position: relative;
 }
 
 .whole {
@@ -266,7 +267,7 @@ a.card:hover {
 /* The end of typed and its baggage */
 
 
-/* here comes dat side nav*/
+/* here comes dat sidenayyv*/
 
 #sidenav {
     background-color: #222;
@@ -275,7 +276,7 @@ a.card:hover {
     position: fixed;
     min-height: 100vh;
     padding: 20px;
-    /*margin-left: -240px;*/
+    margin-left: -240px;
     transition: margin .3s ease-in .2s;
     display: flex;
     align-items: center;

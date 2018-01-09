@@ -2,10 +2,9 @@ doctype html
 html(lang='en')
 	head
 		include content/main/head.pug
-	body
+	body(data-spy="scroll", data-target="#sidenav")
 		include content/main/sidebar.pug
 		main
-			h1#seifsg SeifSG
 			include content/specific/portfolio.pug
 			include content/specific/hero.pug
 			include content/specific/aboutme.pug
