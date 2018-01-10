@@ -104,6 +104,7 @@ h2:before {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-top: none;
     background-color: #fff;
+    min-height: 107px;
 }
 
 .card-text i {
@@ -347,7 +348,7 @@ a.card:hover {
     text-align: center;
     list-style: none;
     display: block;
-    width: 124px;
+    width: 100px;
     min-height: 36px;
     padding: 0;
     margin: auto;
