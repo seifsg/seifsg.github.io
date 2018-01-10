@@ -5,12 +5,15 @@ html(lang='en')
 	body(data-spy="scroll", data-target="#sidenav")
 		include content/main/sidebar.pug
 		main
+			#portfolio
 			include content/specific/portfolio.pug
 			//special case
+			#aboutme
 			#datCover
 				img(src='../imgs/isthatme.jpeg')
 			.container.articles
 				include content/specific/aboutme.pug
+			#hireme
 			#datCover
 				img(src='../imgs/letsdeal.jpeg')
 			.container.articles

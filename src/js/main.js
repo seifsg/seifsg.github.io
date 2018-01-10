@@ -5,7 +5,7 @@ const times = $("#times");
 const timesI = $("#times i");
 const sidebar = $("#sidenav"); //who cares how it is named
 const main = $("main");
-const hireMe = $("#hireme");
+const hireMe = $(".hireme");
 
 times.on('click', toggleSideBar);
 
@@ -14,7 +14,7 @@ $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
 
     //heroStuff();
-    
+
 });
 
 function heroStuff(){
