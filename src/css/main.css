@@ -473,3 +473,19 @@ main.padded{
 }
 
 /* fin disCover */
+
+
+/* Hire me now! */
+
+#sendEmail{
+    text-align: center;
+    padding: 40px 0 120px 0;
+}
+
+#sendEmail a{
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+/* this is not the end*/

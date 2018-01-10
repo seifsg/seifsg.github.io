@@ -11,6 +11,13 @@ times.on('click', toggleSideBar);
 
 $(document).ready(function () {
 
+    $('[data-toggle="tooltip"]').tooltip();
+
+    //heroStuff();
+    
+});
+
+function heroStuff(){
     var typed = new Typed(".hero-text", {
         strings: ['Some <i>strings</i> with', 'Some <strong>HTML</strong>', 'Chars &times; &copy;'],
         typeSpeed: 100,
@@ -20,8 +27,6 @@ $(document).ready(function () {
             console.log(self);
         }
     });
-
-    $('[data-toggle="tooltip"]').tooltip();
 
     scaleVideoContainer();
 
@@ -35,8 +40,7 @@ $(document).ready(function () {
         scaleBannerVideoSize('.video-container .filter');
         scaleBannerVideoSize('.video-container video');
     });
-
-});
+}
 
 function scaleVideoContainer() {
 
