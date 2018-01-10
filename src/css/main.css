@@ -99,7 +99,7 @@ h2:before {
     border-bottom: none;
 }
 
-.card-text:last-child {
+.card-text{
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-top: none;
@@ -149,6 +149,11 @@ a.card:hover {
 
 .card:hover .title-header h3 {
     color: white;
+}
+
+.pin{
+    margin-left: -10px;
+    margin-right: 10px;
 }
 
 
