@@ -1,0 +1,48 @@
+{
+  "name": "seifsg.github.io",
+  "version": "1.0.0",
+  "description": "SeifSg's personal website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"no tests\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seifsg/seifsg.github.io.git"
+  },
+  "keywords": [
+    "seifsg",
+    "seifsgayer",
+    "personal",
+    "website"
+  ],
+  "author": "Seif Sgayer",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/seifsg/seifsg.github.io/issues"
+  },
+  "homepage": "https://github.com/seifsg/seifsg.github.io#readme",
+  "dependencies": {
+    "@babel/preset-env": "^7.0.0-beta.36",
+    "@babel/register": "^7.0.0-beta.36",
+    "gulp-babel": "^7.0.0",
+    "gulp-parcel": "^0.2.8",
+    "parcel-plugin-pug": "^0.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "browser-sync": "^2.23.3",
+    "fancy-log": "^1.3.2",
+    "gulp": "^4.0.0",
+    "gulp-error-handle": "^1.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-run": "^1.7.1",
+    "gulp-run-command": "0.0.9",
+    "gulp-shell": "^0.6.5",
+    "gulp-util": "^3.0.8",
+    "parcel-bundler": "^1.4.1"
+  }
+}

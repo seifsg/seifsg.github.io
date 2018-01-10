@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+	head
+		include content/main/head.pug
+	body(data-spy="scroll", data-target="#sidenav")
+		include content/main/sidebar.pug
+		main(role="main")
+			#portfolio
+			include content/specific/portfolio.pug
+			//special case
+			#datCover(role="banner")
+				#aboutme
+				img(src='../imgs/isthatme.jpeg')
+			.container.articles
+				include content/specific/aboutme.pug
+			#datCover(role="banner")
+				#hireme
+				img(src='../imgs/letsdeal.jpeg')
+			.container.articles
+				include content/specific/hireme.pug
+		include content/main/footer.pug

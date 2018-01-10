@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:200,300,400,700|Nunito+Sans:200,400');
+
+/* General page css*/
+
+body {
+    background-color: #f7f5f6;
+    text-rendering: optimizeLegibility !important;
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+}
+
+.container{
+    max-width: 788px;
+}
+
+.whole {
+    min-height: 100vh;
+    padding: 15px;
+}
+
+::selection {
+    background-color: #0274ff;
+    text-shadow: none;
+    color: white;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #777;
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+h2:before {
+    position: absolute;
+    background: #575757;
+    height: 2px;
+    width: 45px;
+    content: "";
+    bottom: 0;
+}
+
+
+/* end of that general's story */
+
+
+/* Who's portfolio? */
+
+#portfolio>.row {
+    padding: 2rem;
+}
+
+#portfolio h2 {
+    font-weight: 300;
+}
+
+.title-header {
+    padding: .75rem 1.25rem;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid transparent;
+    transition: background-color .3s ease-in-out .1s;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.title-header h3 {
+    color: unset;
+    font-size: 0.80rem;
+    margin: 0;
+    transition: color .3s ease-in-out .1s;
+    font-weight: 700;
+}
+
+.img-card {
+    width: 100%;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+.card-text{
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: none;
+    background-color: #fff;
+    min-height: 107px;
+}
+
+.card-text i {
+    padding: .3rem;
+    font-size: small;
+    color: rgba(0, 0, 0, 0.47);
+}
+
+.card {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #607d8b40;
+    /*transition: all .3s ease-in-out .2s;*/
+    background-color: transparent;
+    margin-bottom: 5rem;
+}
+
+a.card,
+a.card:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
+/* dat card moves */
+
+.card:hover {
+    border-bottom: 3px solid #607d8b80;
+    -webkit-box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover .img-card {
+    -webkit-animation: tada 1s;
+    animation: tada 1s;
+}
+
+.card:hover .title-header {
+    background-color: rgb(185, 0, 0);
+    display: block;
+}
+
+.card:hover .title-header h3 {
+    color: white;
+}
+
+.pin{
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+
+/* still no one knows about portfolio */
+
+
+/* Hero */
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    z-index: 0;
+}
+
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+.video-container video {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}
+
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+#textHero {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    z-index: 10;
+    margin: auto;
+}
+
+.hero-text {
+    margin: auto;
+}
+
+
+/* The end of the Hero */
+
+
+/* typed and its baggage */
+
+.typed-cursor {
+    display: inline-block;
+    margin-left: -2px;
+    opacity: 1;
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;
+}
+
+@keyframes typedjsBlink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes typedjsBlink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.typed-fade-out {
+    opacity: 0;
+    transition: opacity .25s;
+    -webkit-animation: 0;
+    animation: 0;
+}
+
+
+/* The end of typed and its baggage */
+
+
+/* here comes dat sidenayyv*/
+
+#sidenav {
+    background-color: #222;
+    color: white;
+    width: 240px;
+    position: fixed;
+    min-height: 100vh;
+    padding: 20px;
+    margin-left: -240px;
+    transition: margin .3s ease-in .2s;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+#sidenav.opened {
+    margin-left: 0;
+}
+
+#logo {}
+
+#logoImg {}
+
+#logoText {}
+
+#brand {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: x-large;
+}
+
+#slogan {
+    text-align: center;
+    margin: 5px 0 15px 0;
+}
+
+#sidenav .container-fluid>ul {
+    list-style: none;
+    text-align: center;
+    padding: 24px 0;
+    border: 1px solid #fafafa;
+    border-right: none;
+    border-left: none;
+}
+
+#sidenav .container-fluid>ul>li>a {
+    padding: 16px 0;
+    color: #ccc;
+    display: inherit;
+    transition: all .2s ease-in-out .1s;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+}
+
+#sidenav .container-fluid>ul>li>a:hover {
+    text-decoration: inherit;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+/* soupeIcons because social icons blocked by adblock */
+
+#soupeIcons {}
+
+#soupeIcons>ul {
+    text-align: center;
+    list-style: none;
+    display: block;
+    width: 100px;
+    min-height: 36px;
+    padding: 0;
+    margin: auto;
+}
+
+#soupeIcons>ul>li {
+    float: left;
+    padding: 5px;
+}
+
+.sideFooter {}
+
+.sideFooter a i {
+    color: red;
+}
+
+.sideFooter a:hover i {
+    -webkit-animation: pulse 1s infinite;
+    animation: pulse 1s infinite;
+}
+
+#soupeIcons>ul>li>a,
+#soupeIcons>ul>li>a:hover,
+.sideFooter a,
+.sideFooter a:hover {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+#times {
+    position: absolute;
+    text-align: center;
+    height: 40px;
+    width: 50px;
+    float: right;
+    background-color: #222;
+    margin-right: -50px;
+    bottom: 20px;
+    right: 0;
+    font-size: 23px;
+    transition: all .3s ease-in-out .1s;
+    cursor: pointer;
+}
+
+
+/* end of dat boi sidenav*/
+
+
+/* main layout and stuff */
+
+#seifsg {
+    font-weight: 200;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+}
+
+main {
+    padding-left: 0;
+    transition: padding .3s ease-in .2s;
+}
+
+main.padded{
+    padding-left: 240px;
+}
+
+
+/* end of everything/main layout and stuff */
+
+/* articles damn */
+.articles{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    background-color: #fff;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    margin-top: -30%
+}
+
+.divider{
+    margin: 16px auto;
+    height: 2px;
+    background: #007bff;
+    width: 20%;    
+}
+
+.container article{}
+.container article h1{
+    font-weight: 400;
+    font-size: 56px;
+    text-align: center;
+    font-family: inherit;
+    color: #000;
+    background-color: white;
+    padding: 24px 0;
+}
+.container article h2{
+    font-weight: 400;
+    font-size: 45px;
+    font-family: inherit;
+    color: #000;
+    background-color: white;
+    padding: 24px 0;
+}
+
+.container article h2:before {
+    background: #007bff;
+    width: 65px;
+}
+.container article .content{
+    color: rgba(0,0,0,.87);
+    text-align: left;
+    padding: 16px 48px;
+}
+.container article .content p{}
+
+/* all things come to an end even ARTICLES */
+
+
+/* datCover */
+
+#datCover{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+}
+
+#datCover img{
+    width: 100%;
+}
+
+/* fin disCover */
+
+
+/* Hire me now! */
+
+#sendEmail{
+    text-align: center;
+    padding: 40px 0 120px 0;
+}
+
+#sendEmail a{
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+/* this is not the end*/
