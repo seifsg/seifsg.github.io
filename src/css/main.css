@@ -287,10 +287,13 @@ a.card:hover {
     min-height: 100vh;
     padding: 20px;
     margin-left: -240px;
-    transition: margin .3s ease-in .2s;
+    transition: margin .1s ease-in .1s;
     display: flex;
     align-items: center;
     z-index: 1000;
+    height: -moz-available;
+    height: -webkit-available;
+    height: available;
 }
 
 #sidenav.opened {
@@ -328,7 +331,7 @@ a.card:hover {
     padding: 16px 0;
     color: #ccc;
     display: inherit;
-    transition: all .2s ease-in-out .1s;
+    transition: color,border .2s ease-in-out .1s;
     border: 1px solid transparent;
     text-transform: uppercase;
 }
@@ -386,10 +389,10 @@ a.card:hover {
     float: right;
     background-color: #222;
     margin-right: -50px;
-    bottom: 20px;
+    top: 10px;
     right: 0;
     font-size: 23px;
-    transition: all .3s ease-in-out .1s;
+    transition: margin .3s ease-in-out .1s;
     cursor: pointer;
 }
 
@@ -407,11 +410,7 @@ a.card:hover {
 
 main {
     padding-left: 0;
-    transition: padding .3s ease-in .2s;
-}
-
-main.padded{
-    padding-left: 240px;
+    transition: padding .1s ease-in .2s;
 }
 
 
@@ -436,7 +435,6 @@ main.padded{
 .container article{}
 .container article h1{
     font-weight: 400;
-    font-size: 56px;
     text-align: center;
     font-family: inherit;
     color: #000;
@@ -445,7 +443,6 @@ main.padded{
 }
 .container article h2{
     font-weight: 400;
-    font-size: 45px;
     font-family: inherit;
     color: #000;
     background-color: white;
@@ -495,3 +492,22 @@ main.padded{
 }
 
 /* this is not the end*/
+
+
+/* dem medias */
+
+@media (min-width: 560px){
+    .container article h2 {
+        font-size: 45px;
+        line-height: 1;
+    }
+    .container article h1 {
+        font-size: 56px;
+        line-height: 1;
+    }
+    main.padded{
+        padding-left: 240px;
+    }
+}
+
+/* no mediaos pls*/
