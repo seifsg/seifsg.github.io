@@ -6,8 +6,14 @@ html(lang='en')
 		include content/main/sidebar.pug
 		main
 			include content/specific/portfolio.pug
-			include content/specific/hero.pug
+			//special case
+			#datCover
+				img(src='../imgs/isthatme.jpeg')
 			.container.articles
 				include content/specific/aboutme.pug
+			include content/specific/hero.pug
+			#datCover
+				img(src='../imgs/isthatme.jpeg')
+			.container.articles
 				include content/specific/hireme.pug
 		include content/main/footer.pug

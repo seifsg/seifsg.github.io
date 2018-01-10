@@ -11,6 +11,10 @@ body {
     position: relative;
 }
 
+.container{
+    max-width: 788px;
+}
+
 .whole {
     min-height: 100vh;
     padding: 15px;
@@ -412,9 +416,60 @@ main.padded{
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
     background-color: #fff;
     border-radius: 2px;
+    margin-bottom: 30px;
+    margin-top: -30%
 }
+
+.divider{
+    margin: 16px auto;
+    height: 2px;
+    background: #007bff;
+    width: 20%;    
+}
+
 .container article{}
-.container article h1{}
-.container article p{}
+.container article h1{
+    font-weight: 400;
+    font-size: 56px;
+    text-align: center;
+    font-family: inherit;
+    color: #000;
+    background-color: white;
+    padding: 24px 0;
+}
+.container article h2{
+    font-weight: 400;
+    font-size: 45px;
+    font-family: inherit;
+    color: #000;
+    background-color: white;
+    padding: 24px 0;
+}
+
+.container article h2:before {
+    background: #007bff;
+    width: 65px;
+}
+.container article .content{
+    color: rgba(0,0,0,.87);
+    text-align: left;
+    padding: 16px 48px;
+}
+.container article .content p{}
 
 /* all things come to an end even ARTICLES */
+
+
+/* datCover */
+
+#datCover{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+}
+
+#datCover img{
+    width: 100%;
+}
+
+/* fin disCover */
