@@ -124,7 +124,7 @@ function toggleSideBar() {
         // dat jucy hire me action
         hireMe.css('color', "#fff");
         setTimeout(() => hireMe.addClass('animated flash'), 1000);
-        setTimeout(() => hireMe.css('color', "#ccc"), 1500);
+        setTimeout(() => hireMe.css('color', ""), 1500);
 
         sidebar.attr('data-state', 'open');
     } else {
