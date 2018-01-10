@@ -4,17 +4,17 @@ html(lang='en')
 		include content/main/head.pug
 	body(data-spy="scroll", data-target="#sidenav")
 		include content/main/sidebar.pug
-		main
+		main(role="main")
 			#portfolio
 			include content/specific/portfolio.pug
 			//special case
 			#aboutme
-			#datCover
+			#datCover(role="banner")
 				img(src='../imgs/isthatme.jpeg')
 			.container.articles
 				include content/specific/aboutme.pug
 			#hireme
-			#datCover
+			#datCover(role="banner")
 				img(src='../imgs/letsdeal.jpeg')
 			.container.articles
 				include content/specific/hireme.pug
