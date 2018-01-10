@@ -9,6 +9,19 @@ const hireMe = $(".hireme");
 
 times.on('click', toggleSideBar);
 
+// ez trick
+
+$('#sideLinks li a').on('click',function(e){
+    e.preventDefault();
+    let el = $($(this).attr('href'));
+
+    if(el != undefined){
+        $('html, body').animate({
+            scrollTop: el.offset().top
+        }, 1000);
+    }
+});
+
 $(document).ready(function () {
 
     $('[data-toggle="tooltip"]').tooltip();
