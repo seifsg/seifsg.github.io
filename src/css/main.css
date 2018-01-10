@@ -387,7 +387,7 @@ a.card:hover {
     height: 40px;
     width: 50px;
     float: right;
-    background-color: #222;
+    background-color: red;
     margin-right: -50px;
     top: 10px;
     right: 0;
@@ -422,7 +422,6 @@ main {
     background-color: #fff;
     border-radius: 2px;
     margin-bottom: 30px;
-    margin-top: -30%
 }
 
 .divider{
@@ -469,6 +468,21 @@ main {
     position: relative;
     z-index: -1;
     width: 100%;
+    height: 65vh;
+    margin-bottom: -50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+.aboutMeCover{
+    background-image: url('../imgs/isthatme.jpeg');
+}
+
+.hireMeCover{
+    background-image: url('../imgs/letsdeal.jpeg');
 }
 
 #datCover img{
