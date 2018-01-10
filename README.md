@@ -2,6 +2,8 @@
 
 This repository is of a personal website of a developer. It gives the visitor/reader a quick view on the life of a friendly soul who's trying to leave a mark in the world.
 
+**Hint:** I'm not much of a designer but I tried my best. If you are a designer, I'm open to suggestions :)
+
 ## Features
 
 This website is mainly composed of:
